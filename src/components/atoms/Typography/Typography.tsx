@@ -20,9 +20,9 @@ export type Props = {
   weight?: FontWeight;
   color?: TextColor;
   gradiant?: Gradiant;
-  customColor?: string;
   withCarriageReturn?: boolean;
-  customColorClass?: `text-${TextColor}-${Shade}`;
+  customColorClass?: string;
+  // customColorClass?: `text-${TextColor}-${Shade}`;
   customClassName?: string;
   marginClassName?: MarginRestrictedClassnames;
   fontFamily?: FontFamily;
@@ -59,19 +59,16 @@ export const Typography = ({
   transform,
   color,
   gradiant,
-  customColor,
   customColorClass,
   withCarriageReturn,
   marginClassName,
   customClassName
 }: Props) => {
   const CustomTag = tag ? tag : (variant && VARIANT_TO_TAG[variant]) || 'p';
-  const appliedColor = customColor || undefined;
 
   return (
     <CustomTag
       data-testid="typography"
-      style={{ color: appliedColor }}
       className={clsxm(
         'align-left font-normal ',
         marginClassName,
@@ -137,7 +134,7 @@ export const Typography = ({
           gradiant === 'star' && 'bg-gradient-to-r from-white to-slate-300 animate-text bg-clip-text text-transparent font-black'
         ],
         // [fontFamily === 'primary' && `${lufga.variable} font-lufga`, fontFamily === 'secondary' && `${poppins.variable} font-poppins`],
-        customColorClass && customColorClass,
+        customColorClass,
         withCarriageReturn && 'whitespace-pre-line'
       )}
       onClick={onClick}

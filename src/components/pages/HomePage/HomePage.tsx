@@ -1,11 +1,38 @@
+import { Hero } from '@/components/organisms/Hero';
 import { PublicLayout } from '@/components/templates/PublicLayout';
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+
+
+
 
 export const HomePage = () => {
   return (
-    <PublicLayout>
-      <div className='flex items-center justify-center'>
-        <div className='w-[1000px] h-[600px] bg-gray-400 flex justify-center items-center self-center my-10 rounded-3xl'></div>
-        </div>
+    <PublicLayout>    
+      <Hero /> 
+      <Drawer>
+  <DrawerTrigger>Open</DrawerTrigger>
+  <DrawerContent>
+    <DrawerHeader>
+      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+      <DrawerDescription>This action cannot be undone.</DrawerDescription>
+    </DrawerHeader>
+    <DrawerFooter>
+      <button>Submit</button>
+      <DrawerClose>
+        <button>Cancel</button>
+      </DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
     </PublicLayout>
   );
 };

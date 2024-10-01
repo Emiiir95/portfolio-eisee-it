@@ -1,10 +1,16 @@
+import { ProjetBlock } from '@/components/organisms/ProjetBlock';
 import { PublicLayout } from '@/components/templates/PublicLayout';
-import { Link } from 'react-router-dom';
+
 
 export const ProjetPage = () => {
+
   return (
     <PublicLayout>
-      <Link to="/Veille">oui</Link>
+      <div className='bg-gradient-to-br from-[#C5597D] via-[#974286] to-[#7E45A3] w-full h-full relative flex items-center justify-center'>
+        <div className='mx-[10%]'>
+            <ProjetBlock label='Tous mes projets!'></ProjetBlock>
+        </div>
+      </div>
     </PublicLayout>
   );
 };

@@ -1,18 +1,21 @@
 import { Footer } from '@/components/organisms/Footer';
 import { Header } from '@/components/organisms/Header';
-import { Hero } from '@/components/organisms/Hero';
 
 interface PublicLayoutProps {
   children: React.ReactNode;
+  colorTextHeader?: string;
 }
 
-export function PublicLayout({ children }: PublicLayoutProps) {
+
+
+export function PublicLayout({ children, colorTextHeader }: PublicLayoutProps) {
   return (
-    <div className="flex min-h-screen w-full flex-col">
-      <Header />
-      <Hero/>
-      <main className="grow">{children}</main>
-      <Footer />
-    </div>
-  );
+    <div className="flex flex-col justify-between h-screen bg-[#FFEEF4]">
+      <div className="flex flex-col w-full flex-grow">
+        <Header typographieColor={colorTextHeader} />    
+        <div className={'flex flex-col flex-grow'}>{children}</div>
+        </div>
+        <Footer />
+     </div>
+  )
 }

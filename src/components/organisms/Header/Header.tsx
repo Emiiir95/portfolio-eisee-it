@@ -1,10 +1,14 @@
-import { IosButton } from '@/components/atoms/IosButton';
-import { Dropdown, Navbar } from 'flowbite-react';
+import { Navbar } from 'flowbite-react';
 import { useEffect, useState } from 'react';
-
 import { Link } from 'react-router-dom';
+import clsx from 'clsx';
 
-export const Header = () => {
+
+interface HeaderProps {
+  typographieColor?: string;
+}
+
+export function Header({ typographieColor }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,40 +29,27 @@ export const Header = () => {
   }, []);
 
   return (
-    <Navbar fluid rounded className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
-      <div className='ml-10'> 
-        </div>
+    <Navbar fluid className={clsx('fixed top-0 left-0 w-full z-50 transition-colors duration-300', isScrolled ? 'opacity-90' : 'bg-transparent')}> 
+      <div></div>
       <Navbar.Collapse>
-        <Navbar.Link as={Link} to="/HomePage" className={`${isScrolled ? 'text-black' :'text-white'}`}>
-          Acceuil
+        <Navbar.Link as={Link} to="/HomePage" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        Acceuil
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Entreprise" className={`${isScrolled ? 'text-black' :'text-white'}`}>
-          Entreprise
+        <Navbar.Link as={Link} to="/Entreprise" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        Entreprise
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Projet" className={`${isScrolled ? 'text-black' :'text-white'}`}>
+        <Navbar.Link as={Link} to="/Projet" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
           Projet
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Veille" className={`${isScrolled ? 'text-black' :'text-white'}`}>
+        <Navbar.Link as={Link} to="/Veille" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
           Veille
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Bilan" className={`${isScrolled ? 'text-black' :'text-white'}`}>
+        <Navbar.Link as={Link} to="/Bilan" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
           Bilan
         </Navbar.Link>
           </Navbar.Collapse>
           <Navbar.Toggle />
-           <div className="flex md:order-2">
-             <Dropdown
-               arrowIcon={false}
-               inline
-               label={isScrolled ? <img alt="settings" src="public/assets/images/settingsIconBlack.gif" className='h-10 w-30' /> : <img alt="settings" src="public/assets/images/settingsIconWhite.gif" className='h-10 w-30' />}
-             >
-               <Dropdown.Divider />
-               <div className="flex flex-row justify-between items-center pr-4">
-                 <Dropdown.Item>Mode</Dropdown.Item>
-                 <IosButton />
-               </div>
-             </Dropdown>
-               </div>
+      <div></div>
     </Navbar>
   );
 };
