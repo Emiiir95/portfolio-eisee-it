@@ -36,13 +36,13 @@ export const ProjetDrawer = ({ name, year, image, link, description }: ProjetDra
         </div>
       </DrawerTrigger>
 
-      <DrawerContent>
+      <DrawerContent >
         <DrawerHeader className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-20 md:mx-11">
           <div className="md:w-1/3 flex flex-col items-center">
-            <Typography variant="componentTitle" align="center">{name}</Typography>
+            <Typography color="white" variant="componentTitle" align="center">{name}</Typography>
             <div className="flex flex-row gap-4 mt-5">
-              <Link target="_blank" to={link ? link : 'https://signaleo.co'}>
-                <Button size="lg">{name}</Button>
+              <Link target="_blank" to={link ? `https://${link}` : 'https://signaleo.co'}>
+                <Button size="lg" className="border-[#27272A] border-2 bg-black">{link}</Button>
               </Link>
               <DrawerClose asChild>
                 <Button size="lg" variant="outline">Retour</Button>
@@ -53,13 +53,13 @@ export const ProjetDrawer = ({ name, year, image, link, description }: ProjetDra
           <div className="flex flex-col gap-8 w-full">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <Typography variant="h2">Description</Typography>
+                <Typography color="white" variant="h2">Description</Typography>
                 <div className="border-2 w-1/4 border-gray-300"/>
                 <Typography color="lightGray">{description}</Typography>
 
               </div>
               <div>
-                <Typography variant="h2">Public ciblé par le projet</Typography>
+                <Typography color="white" variant="h2">Public ciblé par le projet</Typography>
                 <div className="border-2 w-1/4 border-gray-300"/>
                 <Typography color="lightGray">Mairies / Citoyens</Typography>
               </div>
@@ -67,12 +67,12 @@ export const ProjetDrawer = ({ name, year, image, link, description }: ProjetDra
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div>
-                <Typography variant="h2">Mission</Typography>
+                <Typography color="white" variant="h2">Mission</Typography>
                 <div className="border-2 w-1/4 border-gray-300"/>
                 <Typography color="lightGray">Durée de la mission, ma mission, temps</Typography>
               </div>
               <div>
-                <Typography variant="h2">Technologies</Typography>
+                <Typography color="white" variant="h2">Technologies</Typography>
                 <div className="border-2 w-1/4 border-gray-300"/>
                 <Typography color="lightGray">npm, react</Typography>
               </div>

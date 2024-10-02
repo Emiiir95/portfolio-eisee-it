@@ -6,8 +6,9 @@ export function EntreprisePage() {
   
   return (
     <PublicLayout>
-      <div></div>
-      <SnowpactTeam />    
+      <section className='pt-20'>
+        <SnowpactTeam />    
+      </section>
     </PublicLayout>
   );
 };

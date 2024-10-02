@@ -4,11 +4,8 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
 
-interface HeaderProps {
-  typographieColor?: string;
-}
 
-export function Header({ typographieColor }: HeaderProps) {
+export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,22 +26,22 @@ export function Header({ typographieColor }: HeaderProps) {
   }, []);
 
   return (
-    <Navbar fluid className={clsx('fixed top-0 left-0 w-full z-50 transition-colors duration-300', isScrolled ? 'opacity-90' : 'bg-transparent')}> 
+    <Navbar fluid className={clsx('fixed top-0 left-0 w-full z-50 transition-colors duration-300', isScrolled ? 'opacity-90 bg-[#815CFC]' : 'bg-transparent')}> 
       <div></div>
       <Navbar.Collapse>
-        <Navbar.Link as={Link} to="/HomePage" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        <Navbar.Link as={Link} to="/HomePage" className='text-white'>
         Acceuil
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Entreprise" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        <Navbar.Link as={Link} to="/Entreprise" className='text-white'>
         Entreprise
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Projet" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        <Navbar.Link as={Link} to="/Projet" className='text-white'>
           Projet
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Veille" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        <Navbar.Link as={Link} to="/Veille" className='text-white'>
           Veille
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/Bilan" className={isScrolled ? 'text-white' : `text-[${typographieColor}]`}>
+        <Navbar.Link as={Link} to="/Bilan" className='text-white'>
           Bilan
         </Navbar.Link>
           </Navbar.Collapse>

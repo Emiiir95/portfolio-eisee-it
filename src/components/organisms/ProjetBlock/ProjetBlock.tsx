@@ -20,42 +20,42 @@ export const ProjetBlock = ({label}: ProjetBlockInteface) => {
   const projectsProfessionnel = [
     {
       name: 'Signaleo',
-      link: 'https://signaleo.co',
+      link: 'signaleo.co',
       year: '2024',
       description: 'Application mobile pour faciliter la gestion des incidents dans les villes pour les citoyens et pour les mairies',
       image: signaleoIcon, 
     },
     {
       name: "Mon Resto'Halal",
-      link: 'https://mon-resto-halal.com',
+      link: 'mon-resto-halal.com',
       year: '2023-2024',
       description: 'Site Mail',
       image: monRestoHalalIcon,
     },
     {
       name: 'Snowpact',
-      link: 'https://snowpact.com',
+      link: 'snowpact.com',
       year: '2024',
       description: 'Site blog',
       image: snowpactIcon,
     },
     {
       name: 'ADN',
-      link: 'https://animationdigitalnetwork.fr',
+      link: 'animationdigitalnetwork.fr',
       year: '2023-2024',
       description: 'migration php en typescript legacy',
       image: adnIcon,
   },
   {
     name: 'Evolios',
-    link: 'https://evolios.fr',
+    link: 'evolios.fr',
     year: '2024',
     description: 'BackOffice',
     image: avatar,
   },
     {
       name: 'My Social Worker',
-      link: 'https://mysocialworker.fr',
+      link: 'mysocialworker.fr',
       year: '2023',
       description: 'migration php en typescript legacy',
       image: mySocialWorkerIcon,
@@ -135,20 +135,19 @@ export const ProjetBlock = ({label}: ProjetBlockInteface) => {
     },
   ];
 
-
   const [activeSection, setActiveSection] = useState<Section>('professionnel');
 
   const buttonClass = (section: Section) =>
     `mx-2 px-5 py-3 rounded-xl shadow-xl ${
-      activeSection === section ? 'bg-[#C41D7E] text-white' : 'text-[#f2348d]'
+      activeSection === section ? 'bg-[#C41D7E] text-white border-2 border-white' : 'border-2 border-white text-[#f2348d]'
     }`;
   
   return (
-    <div className='flex items-center justify-center flex-col'>
-      <Typography variant='heroTitle' color='white' customClassName='pb-20'>{label}</Typography>
-      <div className='w-full flex-col flex py-5 rounded-3xl p-32 bg-[#000] bg-opacity-30 border-white relative'>
-        <div className='flex justify-center'>
-        <div className='flex justify-center items-center h-12 rounded-2xl w-auto gap-6 mb-24'>
+    <div className='flex items-center flex-col'>
+      <Typography variant='heroTitle' color='white' customClassName='md:pb-20 pb-10'>{label}</Typography>
+      <div className='w-full flex-col flex rounded-3xl md:py-5 p-16 md:px-32 bg-[#27272A] border-2 border-[#27272A] bg-opacity-30 relative items-center justify-center'>
+        
+        <div className='flex justify-center items-center h-12 rounded-2xl w-auto gap-6 mb-24 md:flex-row flex-col'>
           <button
             onClick={() => setActiveSection('professionnel')}
             className={buttonClass('professionnel')}
@@ -167,7 +166,6 @@ export const ProjetBlock = ({label}: ProjetBlockInteface) => {
               </Typography>
             </button>
           </div>
-        </div>
 
           {activeSection === 'professionnel' && (
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6'>

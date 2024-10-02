@@ -22,7 +22,7 @@ export function SnowBall({ avatar,avatar2, name, job }: SnowBallPorps) {
     };
 
     return (
-    <div className="bg-[#F9F9F9] w-44 h-60 flex flex-col items-center relative overflow-hidden border-[2px] border-[#815CFC] rounded-2xl shadow-inner shadow-white p-4 gap-4" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>  
+    <div className="bg-[#] w-44 h-60 flex flex-col items-center relative overflow-hidden border-[2px] border-[#815CFC] rounded-2xl shadow-inner shadow-white p-4 gap-4" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>  
             <div className='flex justify-center items-center' >
                 {isSnowing ? <img src={avatar2} alt="avatar2" className="w-28 h-28 object-cover" /> : <img src={avatar} alt="avatar" className="w-28 h-28 object-cover" />}
                 {isSnowing && <Snowfall />}

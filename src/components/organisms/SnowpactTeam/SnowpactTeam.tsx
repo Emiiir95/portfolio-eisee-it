@@ -111,8 +111,8 @@ const snowpactInfo = [
 
 export function SnowpactTeam({ }: SnowpactTeamProps) {
   return (
-    <div className='flex-col flex gap-12 items-center py-10'>
-      <Typography customColorClass='text-[#7B3460]' variant='componentTitle'>L'équipe Snowpact</Typography>
+    <div className='flex-col flex gap-12 items-center'>
+      <Typography color='white' variant='componentTitle'>L'équipe Snowpact</Typography>
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6'>
         {snowpactInfo.map((info) => (
           <SnowBall avatar={info.avatar} avatar2={info.avatar} name={info.name} job={info.job}></SnowBall>
