@@ -7,9 +7,9 @@ interface FooterProps {
 
 export function Footer({ }: FooterProps) {
   return (
-    <footer className="p-4 flex justify-start bg-black">
+    <footer className="p-14 flex justify-start bg-black mt-10">
       <div className={"container mx-auto text-start"}>
-        <Typography color="white" align="center">© 2024 | Emir Sen</Typography>
+        <Typography customColorClass="text-[#71717A]" align="center">© 2024 | Emir Sen</Typography>
       </div>
     </footer>
   );

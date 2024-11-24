@@ -1,37 +1,45 @@
 import { PublicLayout } from "@/components/templates/PublicLayout"
 import { Hero } from "@/components/organisms/Hero"
 import { Contribution } from "@/components/organisms/Contribution"
-import { Typography } from "@/components/atoms/Typography/Typography"
-import { Button } from "@/components/ui/button"
+import { SocialComponentVertical, } from "@/components/organisms/SocialComponent"
+import { useMediaQuery } from "@mui/material"
 
+import header from '@/assets/images/headerPortfolio.png';
+import headerMobile from '@/assets/images/headerMobile.png';
+import emircv from "@/assets/document/CV_SEN_Emir.pdf"
+import { ParcoursComponent } from "@/components/organisms/ParcoursComponent"
+import { CertificationComponent } from "@/components/organisms/CertificationComponent"
+
+import { CVComponent } from "@/components/atoms/CVComponent"
+import { SocialVertical } from "@/components/organisms/SocialVertical"
+import { CompetenceComponent } from "@/components/organisms/CompetenceComponent"
 
 export function HomePage() {
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
     <PublicLayout>
-      <Hero/>
-      <div className="flex items-center justify-center mt-20 flex-col">
+      <Hero img={isMobile ? headerMobile : header} />
+      {isMobile === false && (
+        <section className="fixed bottom-10 right-10">
+          <SocialComponentVertical />
+        </section>
+      )}
+      
+      <section className="mt-10 flex justify-center">
+        <SocialVertical/>
+      </section>
 
-        <section className="bg-[#27272A] w-full p-11 flex gap-10 flex-col">
-          <div className="w-[30%] leading-[38px]">
-          <Typography color="white" variant="componentTitle">À propos de moi</Typography>
-            <Typography color="white">Je me présente, Dylan CHAU, technicien informatique âgé de 20 ans passionné par les nouvelles technologies, le sport et l'automobile. Je suis actuellement étudiant en BTS SIO SISR en alternance chez Burger King France.</Typography>
-          </div>
-          <div>
-            <Button variant="outline">Mon CV</Button>
-          </div>
-        </section>
-        
-        <section className="w-[60%] h-auto mx-60 mt-20 gap-10 flex flex-col"> 
-          <Typography align="center" variant="componentTitle" color="white">Mes travaux durant mon BTS</Typography>
-           <Contribution/> 
-        </section>
-        
-        <section className="w-[60%] h-auto mx-60 mt-20 gap-10 flex flex-col"> 
-          <Typography align="center" variant="componentTitle" color="white">Mon parcours</Typography>
-        </section>
-        
-      </div>
+      <CVComponent download={emircv} description="Bonjour, je m'appelle Emir Sen, j'ai 19 ans et je suis actuellement en BTS SIO, option SLAM. Passionné par l'informatique depuis toujours, je me spécialise dans le développement web et les sites internet."/>
+      
+      <section className="flex items-center justify-center flex-col gap-20 md:gap-44 md:mx-60 mx-10 mt-32">
+        <ParcoursComponent />
+        <Contribution/> 
+        <CompetenceComponent/>
+        <CertificationComponent />
+      </section>
+
+
     </PublicLayout>
   )
-}
+}        

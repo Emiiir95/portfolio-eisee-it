@@ -48,7 +48,19 @@ export default {
 					'3': 'hsl(var(--chart-3))',
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
-				}
+				},
+				animation: {
+					rotate: 'rotateBG 3s linear infinite',
+				},
+				keyframes: {
+					rotateBG: {
+						'0%': { transform: 'rotate(0deg)' },
+						'100%': { transform: 'rotate(360deg)' },
+					},
+				},
+			},
+			boxShadow: {
+				div: '0 4px 15px rgba(255, 255, 255, 0.3)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -56,7 +68,6 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			}
 		},
-		plugins: [flowbite.plugin()]
 	},
-	plugins: [require("tailwindcss-animate")]
+	plugins: [flowbite.plugin(), require("tailwindcss-animated"),]
 }

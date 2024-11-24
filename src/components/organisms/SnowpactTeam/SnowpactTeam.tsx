@@ -6,6 +6,7 @@ import avatarMurat2 from '@/assets/images/avatar/avatarMurat2.png';
 import avatarStephane from '@/assets/images/avatar/avatarStephane.png';
 import avatarStephane2 from '@/assets/images/avatar/avatarStephane2.png';
 import { Typography } from '@/components/atoms/Typography/Typography';
+import { Grid } from '@mui/material';
 
 interface SnowpactTeamProps {
 }
@@ -112,12 +113,14 @@ const snowpactInfo = [
 export function SnowpactTeam({ }: SnowpactTeamProps) {
   return (
     <div className='flex-col flex gap-12 items-center'>
-      <Typography color='white' variant='componentTitle'>L'équipe Snowpact</Typography>
-      <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-6'>
+      <Typography variant='componentTitle' animated>L' <span className='text-[#F8599C]'>Équipe</span></Typography>
+      <Grid container spacing={2} justifyContent="center" alignItems="center" xs={5} md={20}>
         {snowpactInfo.map((info) => (
-          <SnowBall avatar={info.avatar} avatar2={info.avatar} name={info.name} job={info.job}></SnowBall>
+          <Grid item spacing={3}>
+            <SnowBall avatar={info.avatar} avatar2={info.avatar} name={info.name} job={info.job}/>
+          </Grid>
         ))}  
-      </div>
+      </Grid>
     </div>
   );
 };

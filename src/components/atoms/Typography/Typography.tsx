@@ -22,10 +22,10 @@ export type Props = {
   gradiant?: Gradiant;
   withCarriageReturn?: boolean;
   customColorClass?: string;
-  // customColorClass?: `text-${TextColor}-${Shade}`;
   customClassName?: string;
   marginClassName?: MarginRestrictedClassnames;
   fontFamily?: FontFamily;
+  animated?: boolean
 };
 
 export const VARIANT_TO_TAG: Record<VariantType, HTMLTag> = {
@@ -62,7 +62,8 @@ export const Typography = ({
   customColorClass,
   withCarriageReturn,
   marginClassName,
-  customClassName
+  customClassName,
+  animated
 }: Props) => {
   const CustomTag = tag ? tag : (variant && VARIANT_TO_TAG[variant]) || 'p';
 
@@ -135,7 +136,8 @@ export const Typography = ({
         ],
         // [fontFamily === 'primary' && `${lufga.variable} font-lufga`, fontFamily === 'secondary' && `${poppins.variable} font-poppins`],
         customColorClass,
-        withCarriageReturn && 'whitespace-pre-line'
+        withCarriageReturn && 'whitespace-pre-line',
+        animated && 'tracking-tight bg-gradient-to-r from-white to-slate-500 animate-text bg-clip-text text-transparent font-black'
       )}
       onClick={onClick}
     >

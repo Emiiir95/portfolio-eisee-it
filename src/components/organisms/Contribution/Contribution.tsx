@@ -6,9 +6,7 @@ import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 import {
   ChartConfig,
@@ -16,6 +14,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
+import { Typography } from "@/components/atoms/Typography/Typography"
 
 export const description = "An interactive bar chart"
 
@@ -59,73 +58,77 @@ export function Contribution() {
       ticketMerges: chartData.reduce((acc, curr) => acc + curr.ticketMerges, 0),
     }),
     []
-    )
-    return (
-    <Card className="bg-black text-white">
+  )
+
+  return (
+    <div>
+      <Typography align="center" variant="componentTitle" color="white" customClassName="md:mb-20 mb-10" animated>Quelques chiffres clés</Typography>
+      <Card className="bg-black text-white w-full lg:w-[1000px]">
         <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
-            {/* <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
-                <CardTitle>Bar Chart - Interactive</CardTitle>
-                <CardDescription>
-                    Showing total contributions and ticket merges for the last year
-                </CardDescription>
-            </div> */}
-            <div className="flex">
-                {["githubContributions", "ticketMerges"].map((key) => {
-                    const chart = key as keyof typeof chartConfig
-                    return (
-                        <button
-                            key={chart}
-                            data-active={activeChart === chart}
-                            className="relative z-30 flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-l sm:border-t-0 sm:px-8 sm:py-6"
-                            onClick={() => setActiveChart(chart)}
-                        >
-                            <span className="text-xs text-white">
-                                {chartConfig[chart].label}
-                            </span>
-                            <span className="text-lg font-bold leading-none sm:text-3xl text-white">
-                                {total[key as keyof typeof total].toLocaleString()}
-                            </span>
-                        </button>
-                    )
-                })}
-            </div>
+          <div className="flex">
+            {["githubContributions", "ticketMerges"].map((key, index) => {
+              const chart = key as keyof typeof chartConfig
+              const isActive = activeChart === chart
+
+              return (
+                <button
+                  key={chart}
+                  data-active={isActive}
+                  className={`relative z-30 flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l sm:border-l sm:border-t-0 sm:px-8 sm:py-6
+                    ${index === 1 ? "border-r" : ""}
+                    ${isActive ? "bg-white text-black" : "bg-transparent text-white"} 
+                  `}
+                  onClick={() => setActiveChart(chart)}
+                >
+                  <span className="text-xs">
+                    {chartConfig[chart].label}
+                  </span>
+                  <span className="text-lg font-bold leading-none sm:text-3xl">
+                    {total[key as keyof typeof total].toLocaleString()}
+                  </span>
+                </button>
+              )
+            })}
+          </div>
         </CardHeader>
         <CardContent className="px-2 sm:p-6">
-            <ChartContainer
-                config={chartConfig}
-                className="aspect-auto h-[250px] w-full"
+          <ChartContainer
+            config={chartConfig}
+            className="aspect-auto h-[250px] w-full"
+          >
+            <BarChart
+              accessibilityLayer
+              data={chartData}
+              margin={{
+                left: 12,
+                right: 12,
+              }}
             >
-                <BarChart
-                    accessibilityLayer
-                    data={chartData}
-                    margin={{
-                        left: 12,
-                        right: 12,
+              <CartesianGrid vertical={false} stroke="#ffffff" />
+              <XAxis
+                dataKey="month"
+                tickLine={false}
+                axisLine={false}
+                tickMargin={8}
+                minTickGap={32}
+                stroke="#ffffff"
+              />
+              <ChartTooltip
+                content={
+                  <ChartTooltipContent
+                    className="w-[150px]"
+                    nameKey="views"
+                    labelFormatter={(value) => {
+                      return value; 
                     }}
-                >
-                    <CartesianGrid vertical={false} stroke="#ffffff" />
-                    <XAxis
-                        dataKey="month"
-                        tickLine={false}
-                        axisLine={false}
-                        tickMargin={8}
-                        minTickGap={32}
-                        stroke="#ffffff"
-                    />
-                    <ChartTooltip
-                        content={
-                            <ChartTooltipContent
-                                className="w-[150px]"
-                                nameKey="views"
-                                labelFormatter={(value) => {
-                                    return value; // Just return the month name
-                                }}
-                            />
-                        }
-                    />
-                    <Bar dataKey={activeChart} fill={`var(--color-${activeChart})`} />
-                </BarChart>
-            </ChartContainer>
+                  />
+                }
+              />
+              <Bar dataKey={activeChart} fill={`var(--color-${activeChart})`} />
+            </BarChart>
+          </ChartContainer>
         </CardContent>
-    </Card>
-)}
+      </Card>
+    </div>
+  )
+}
