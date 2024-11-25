@@ -1,70 +1,73 @@
 import { PublicLayout } from '@/components/templates/PublicLayout';
+import { Alert } from "flowbite-react";
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import { Blog } from '@/components/organisms/Blog';
 
 export const Veille = () => {
   const posts = [
     {
       id: 1,
-      title: 'Boost your conversion rate',
-      href: '#',
+      title: 'Le No-Code, une nouvelle voie pour devenir développeur web',
+      date: '12/09/2024',
+      author: "Non précisé (contenu sponsorisé par l'École Cube)",
+      href: 'https://www.cnews.fr/le-corner-partenaires/2024-09-04/le-no-code-une-nouvelle-voie-pour-devenir-developpeur-web-1551048',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        "Le No-Code transforme le monde de la tech en rendant la création d'applications web et mobiles accessible à tous, sans nécessiter de compétences en programmation. Grâce à des outils visuels comme Webflow, Bubble, ou Airtable, les entrepreneurs et entreprises peuvent développer des solutions digitales rapidement et à moindre coût. D'après Gartner, 70 % des applications créées d'ici 2025 utiliseront des technologies No-Code ou Low-Code.",
       imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      author: {
-        name: 'Michael Foster',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
+        'https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh',
+      rating: 5, 
     },
-  ]
+    {
+      id: 2,
+      title: 'Le « no code » bouscule les métiers et les compétences',
+      date: '18/07/2024',
+      author: "Estelle Durand",
+      href: 'https://www.cnews.fr/le-corner-partenaires/2024-09-04/le-no-code-une-nouvelle-voie-pour-devenir-developpeur-web-1551048',
+      description:
+        "Le no-code révolutionne les métiers en rendant possible la création d'applications sans compétences en programmation. Ce mouvement démocratise la digitalisation, fait émerger de nouveaux métiers comme celui de product builder no-code et offre des opportunités de reconversion ou d'évolution professionnelle. La certification RNCP associée, portée par l'École Cube, répond à ces nouveaux besoins en compétences. Le no-code attire des profils variés, du marketing aux RH, en facilitant leur participation à des projets digitaux. Des organismes comme Contournement utilisent aussi le no-code pour initier les non-spécialistes au développement et susciter des vocations.",
+      imageUrl:
+        'https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh',
+      rating: 5, 
+    },
+    {
+      id: 3,
+      title: 'No-code oui, mais No norme',
+      date: '12/09/2024',
+      author: "Thomas Pagbe",
+      href: 'https://www.cnews.fr/le-corner-partenaires/2024-09-04/le-no-code-une-nouvelle-voie-pour-devenir-developpeur-web-1551048',
+      description:
+        "Le no-code révolutionne les métiers en rendant possible la création d'applications sans compétences en programmation. Ce mouvement démocratise la digitalisation, fait émerger de nouveaux métiers comme celui de product builder no-code et offre des opportunités de reconversion ou d'évolution professionnelle. La certification RNCP associée, portée par l'École Cube, répond à ces nouveaux besoins en compétences. Le no-code attire des profils variés, du marketing aux RH, en facilitant leur participation à des projets digitaux. Des organismes comme Contournement utilisent aussi le no-code pour initier les non-spécialistes au développement et susciter des vocations.",
+      imageUrl:
+        'https://www.itforbusiness.fr/wp-content/uploads/2024/09/AFNOR-Low-Code-No-Code-shutterstock_2230902901.jpg',
+      rating: 5, 
+    },
+    {
+      id: 4,
+      title: "Paradoxe du low code et du no code : libérer le temps des pros de l'IT, mais créer de nouveaux problèmes",
+      date: '04/04/2023 (mis à jour le 04/06/2024)',
+      author: "Joe McKendrick",
+      href: 'https://www.cnews.fr/le-corner-partenaires/2024-09-04/le-no-code-une-nouvelle-voie-pour-devenir-developpeur-web-1551048',
+      description:
+        "Le low code et le no code simplifient la création d'applications et allègent la charge des équipes IT, mais engendrent des défis comme la prolifération d'applications non standardisées et la gestion de la complexité accrue. Bien qu'efficaces pour automatiser et moderniser les processus, ces outils nécessitent une supervision IT pour garantir sécurité, conformité et cohérence. Les professionnels doivent encadrer les utilisateurs métiers en définissant des normes et processus, et éviter des chevauchements inutiles d'applications. Les gains de temps réalisés sont souvent redirigés vers la gestion et l'intégration de ces nouveaux écosystèmes d'applications.",
+      imageUrl:
+        'https://www.zdnet.fr/wp-content/uploads/zdnet/2024/02/WorkerKeyboard-750x410.jpg',
+      rating: 5, 
+    },
+  ];
 
   return (
     <PublicLayout>
-          <div className="bg-black py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            From the blog
-          </h2>
-          <p className="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
-            >
-              <img alt="" src={post.imageUrl} className="absolute inset-0 -z-10 size-full object-cover" />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+      <div className="bg-black relative">
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
-                <time dateTime={post.datetime} className="mr-8">
-                  {post.date}
-                </time>
-                <div className="-ml-4 flex items-center gap-x-4">
-                  <svg viewBox="0 0 2 2" className="-ml-0.5 size-0.5 flex-none fill-white/50">
-                    <circle r={1} cx={1} cy={1} />
-                  </svg>
-                  <div className="flex gap-x-2.5">
-                    <img alt="" src={post.author.imageUrl} className="size-6 flex-none rounded-full bg-white/10" />
-                    {post.author.name}
-                  </div>
-                </div>
-              </div>
-              <h3 className="mt-3 text-lg/6 font-semibold text-white">
-                <a href={post.href}>
-                  <span className="absolute inset-0" />
-                  {post.title}
-                </a>
-              </h3>
-            </article>
-          ))}
+        <div className='md:absolute md:right-20 animate-fade-left animate-once animate-duration-[4000ms] flex justify-center mt-24'>
+          <Alert className='w-72' color="info">
+            <NotificationsActiveIcon/>
+            <span className="font-medium ml-6">Vous avez une notification !</span>
+          </Alert>
         </div>
-      </div>
+        <Blog posts={posts} />
     </div>
     </PublicLayout>
   );
 };
+
