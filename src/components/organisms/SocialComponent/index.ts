@@ -1,1 +1,1 @@
-export * from './SocialComponent';
+export * from "./SocialComponent";

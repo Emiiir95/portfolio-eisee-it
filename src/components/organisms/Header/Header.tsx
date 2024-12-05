@@ -1,26 +1,57 @@
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
-import BalanceIcon from '@mui/icons-material/Balance';
-import HomeIcon from '@mui/icons-material/Home';
-import BusinessIcon from '@mui/icons-material/Business';
-import DehazeIcon from '@mui/icons-material/Dehaze';
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import clsx from 'clsx';
-import { Drawer, IconButton, Tooltip, Typography, useMediaQuery } from '@mui/material';
-import * as React from 'react';
-import { SocialComponentHorizontal } from '../SocialComponent';
-
+import React from "react";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
+import BalanceIcon from "@mui/icons-material/Balance";
+import HomeIcon from "@mui/icons-material/Home";
+import BusinessIcon from "@mui/icons-material/Business";
+import DehazeIcon from "@mui/icons-material/Dehaze";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import clsx from "clsx";
+import {
+  Drawer,
+  IconButton,
+  Tooltip,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
+import { SocialComponentHorizontal } from "../SocialComponent";
 
 const navItems = [
-  { title: "Accueil", to: "/HomePage", icon: <HomeIcon className="text-white" /> },
-  { title: "Entreprise", to: "/Entreprise", icon: <BusinessIcon className="text-white" /> },
-  { title: "Projet", to: "/Projet", icon: <AccountTreeIcon className="text-white" /> },
-  { title: "Veille", to: "/Veille", icon: <CircleNotificationsIcon className="text-white" /> },
-  { title: "Bilan", to: "/Bilan", icon: <BalanceIcon className="text-white" /> },
+  {
+    title: "Accueil",
+    to: "/HomePage",
+    icon: <HomeIcon className="text-white" />,
+  },
+  {
+    title: "Entreprise",
+    to: "/Entreprise",
+    icon: <BusinessIcon className="text-white" />,
+  },
+  {
+    title: "Projet",
+    to: "/Projet",
+    icon: <AccountTreeIcon className="text-white" />,
+  },
+  {
+    title: "Veille",
+    to: "/Veille",
+    icon: <CircleNotificationsIcon className="text-white" />,
+  },
+  {
+    title: "Bilan",
+    to: "/Bilan",
+    icon: <BalanceIcon className="text-white" />,
+  },
 ];
 
 export function Header() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -29,7 +60,7 @@ export function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,10 +72,10 @@ export function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -52,10 +83,10 @@ export function Header() {
     <>
       {isMobile ? (
         <div
-        className={clsx(
-          'flex justify-end fixed top-0 right-0 w-auto transition-colors duration-300 p-2 z-50 rounded-bl-2xl gap-5 items-center',
-          isScrolled ? 'opacity-90 bg-[#815CFC]' : 'bg-transparent'
-        )}
+          className={clsx(
+            "flex justify-end fixed top-0 right-0 w-auto transition-colors duration-300 p-2 z-50 rounded-bl-2xl gap-5 items-center",
+            isScrolled ? "opacity-90 bg-[#815CFC]" : "bg-transparent",
+          )}
         >
           <IconButton onClick={toggleDrawer(true)}>
             <DehazeIcon className="text-white" />
@@ -66,12 +97,12 @@ export function Header() {
             anchor="left"
             PaperProps={{
               sx: {
-                backgroundColor: 'black',
-                width: '300px',
-                borderRadius: '0 30px 30px 0',
+                backgroundColor: "black",
+                width: "300px",
+                borderRadius: "0 30px 30px 0",
                 p: 7,
-                boxShadow: '0px 4px 12px rgba(129, 92, 252, 1)',
-                borderRight: '1px solid #815CFC',
+                boxShadow: "0px 4px 12px rgba(129, 92, 252, 1)",
+                borderRight: "1px solid #815CFC",
               },
             }}
           >
@@ -88,9 +119,9 @@ export function Header() {
                     </IconButton>
                   </Link>
                 ))}
-                <div className='absolute bottom-10'>
+                <div className="absolute bottom-10">
                   <SocialComponentHorizontal />
-                  </div>
+                </div>
               </div>
             )}
           </Drawer>
@@ -98,16 +129,16 @@ export function Header() {
       ) : (
         <div
           className={clsx(
-            'flex items-center justify-center gap-6 fixed top-5 left-1/2 transform -translate-x-1/2 w-96 z-50 transition-colors duration-300 p-2 rounded-xl',
-            isScrolled ? 'opacity-90 bg-[#815CFC]' : 'bg-transparent'
+            "flex items-center justify-center gap-6 fixed top-5 left-1/2 transform -translate-x-1/2 w-96 z-50 transition-colors duration-300 p-2 rounded-xl",
+            isScrolled
+              ? "backdrop-blur-md bg-opacity-30 bg-[#000000] border-3 border-[#5914C4]"
+              : "bg-transparent",
           )}
         >
           {navItems.map((item, index) => (
             <Tooltip key={index} title={item.title} arrow>
               <Link to={item.to} className="text-white">
-                <IconButton>
-                  {item.icon}
-                </IconButton>
+                <IconButton>{item.icon}</IconButton>
               </Link>
             </Tooltip>
           ))}

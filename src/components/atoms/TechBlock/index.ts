@@ -1,1 +1,1 @@
-export * from './TechBlock';
+export * from "./TechBlock";

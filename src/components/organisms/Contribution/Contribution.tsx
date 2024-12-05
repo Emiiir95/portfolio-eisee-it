@@ -1,74 +1,78 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
-
-import {
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components/ui/card"
+import * as React from "react";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
-import { Typography } from "@/components/atoms/Typography/Typography"
+} from "@/components/ui/chart";
+import { Typography } from "@/components/atoms/Typography/Typography";
 
-export const description = "An interactive bar chart"
-
+export const description = "An interactive bar chart";
 const chartData = [
-  { month: "Janvier", githubContributions: 186, ticketMerges: 80 },
-  { month: "Février", githubContributions: 305, ticketMerges: 200 },
-  { month: "Mars", githubContributions: 237, ticketMerges: 120 },
-  { month: "Avril", githubContributions: 73, ticketMerges: 190 },
-  { month: "Mai", githubContributions: 209, ticketMerges: 130 },
-  { month: "Juin", githubContributions: 214, ticketMerges: 140 },
-  { month: "Juillet", githubContributions: 214, ticketMerges: 140 },
-  { month: "Août", githubContributions: 214, ticketMerges: 140 },
-  { month: "Septembre", githubContributions: 214, ticketMerges: 140 },
-  { month: "Octobre", githubContributions: 214, ticketMerges: 140 },
-  { month: "Novembre", githubContributions: 214, ticketMerges: 140 },
-  { month: "Décembre", githubContributions: 214, ticketMerges: 140 },
-]
+  { month: "Janvier", contributions: 10, ticketMerges: 0 },
+  { month: "Février", contributions: 19, ticketMerges: 0 },
+  { month: "Mars", contributions: 22, ticketMerges: 0 },
+  { month: "Avril", contributions: 19, ticketMerges: 0 },
+  { month: "Mai", contributions: 8, ticketMerges: 0 },
+  { month: "Juin", contributions: 5, ticketMerges: 0 },
+  { month: "Juillet", contributions: 3, ticketMerges: 0 },
+  { month: "Août", contributions: 0, ticketMerges: 0 },
+  { month: "Septembre", contributions: 6, ticketMerges: 0 },
+  { month: "Octobre", contributions: 24, ticketMerges: 2 },
+  { month: "Novembre", contributions: 36, ticketMerges: 5 },
+  { month: "Décembre", contributions: 0, ticketMerges: 0 },
+];
 
 const chartConfig = {
   views: {
     label: "Activités",
   },
-  githubContributions: {
-    label: "Contributions GitHub",
-    color: "#815CFC",
+  contributions: {
+    label: "Contributions",
+    color: "#07B015",
   },
   ticketMerges: {
     label: "Tickets Merge",
-    color: "#07B015",
+    color: "#815CFC",
   },
-} satisfies ChartConfig
+} satisfies ChartConfig;
 
 export function Contribution() {
-    
-    const [activeChart, setActiveChart] =
-    React.useState<keyof typeof chartConfig>("githubContributions")
+  const [activeChart, setActiveChart] =
+    React.useState<keyof typeof chartConfig>("contributions");
 
   const total = React.useMemo(
     () => ({
-      githubContributions: chartData.reduce((acc, curr) => acc + curr.githubContributions, 0),
+      contributions: chartData.reduce(
+        (acc, curr) => acc + curr.contributions,
+        0,
+      ),
       ticketMerges: chartData.reduce((acc, curr) => acc + curr.ticketMerges, 0),
     }),
-    []
-  )
+    [],
+  );
 
   return (
     <div>
-      <Typography align="center" variant="componentTitle" color="white" customClassName="md:mb-20 mb-10" animated>Quelques chiffres clés</Typography>
+      <Typography
+        align="center"
+        variant="componentTitle"
+        color="white"
+        customClassName="md:mb-20 mb-10"
+        animated
+      >
+        Quelques <span className="text-[#32D572]">chiffres clés</span> de 2024
+      </Typography>
       <Card className="bg-black text-white w-full lg:w-[1000px]">
         <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
           <div className="flex">
-            {["githubContributions", "ticketMerges"].map((key, index) => {
-              const chart = key as keyof typeof chartConfig
-              const isActive = activeChart === chart
+            {["contributions", "ticketMerges"].map((key, index) => {
+              const chart = key as keyof typeof chartConfig;
+              const isActive = activeChart === chart;
 
               return (
                 <button
@@ -80,14 +84,12 @@ export function Contribution() {
                   `}
                   onClick={() => setActiveChart(chart)}
                 >
-                  <span className="text-xs">
-                    {chartConfig[chart].label}
-                  </span>
+                  <span className="text-xs">{chartConfig[chart].label}</span>
                   <span className="text-lg font-bold leading-none sm:text-3xl">
                     {total[key as keyof typeof total].toLocaleString()}
                   </span>
                 </button>
-              )
+              );
             })}
           </div>
         </CardHeader>
@@ -119,7 +121,7 @@ export function Contribution() {
                     className="w-[150px]"
                     nameKey="views"
                     labelFormatter={(value) => {
-                      return value; 
+                      return value;
                     }}
                   />
                 }
@@ -130,5 +132,5 @@ export function Contribution() {
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }

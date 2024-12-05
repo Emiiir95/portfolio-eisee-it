@@ -1,1 +1,1 @@
-export * from './CompetenceComponent';
+export * from "./CompetenceComponent";

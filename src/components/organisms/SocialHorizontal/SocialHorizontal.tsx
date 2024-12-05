@@ -1,16 +1,33 @@
+import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 const socialLinks = [
-  { href: "mailto:example@example.com", label: "Email", icon: <EmailIcon style={{ width: "70%", height: "70%" }} /> },
-  { href: "https://linkedin.com/", label: "LinkedIn", icon: <LinkedInIcon style={{ width: "70%", height: "70%" }} /> },
-  { href: "https://www.github.com/", label: "GitHub", icon: <GitHubIcon style={{ width: "70%", height: "70%" }} /> },
-  { href: "https://www.instagram.com/", label: "Instagram", icon: <InstagramIcon style={{ width: "70%", height: "70%" }} /> },
+  {
+    href: "mailto:example@example.com",
+    label: "Email",
+    icon: <EmailIcon style={{ width: "70%", height: "70%" }} />,
+  },
+  {
+    href: "https://linkedin.com/",
+    label: "LinkedIn",
+    icon: <LinkedInIcon style={{ width: "70%", height: "70%" }} />,
+  },
+  {
+    href: "https://www.github.com/",
+    label: "GitHub",
+    icon: <GitHubIcon style={{ width: "70%", height: "70%" }} />,
+  },
+  {
+    href: "https://www.instagram.com/",
+    label: "Instagram",
+    icon: <InstagramIcon style={{ width: "70%", height: "70%" }} />,
+  },
 ];
 
-export function SocialVertical() {
+export function SocialHorizontal() {
   return (
     <>
       {/* CSS intégré */}
@@ -55,7 +72,7 @@ export function SocialVertical() {
           height: 50px;
           border-radius: 50%;
           color: #4d4d4d;
-          background-color: #fff;
+          background-color: #000;
           transition: all 0.3s ease-in-out;
         }
         .example-2 .icon-content a:hover {
@@ -77,7 +94,7 @@ export function SocialVertical() {
           left: 0;
           width: 100%;
           height: 0;
-          background-color: #000;
+          background-color: #232323;
           transition: all 0.3s ease-in-out;
         }
         .example-2 .icon-content a:hover .filled {
@@ -119,10 +136,14 @@ export function SocialVertical() {
         }
       `}</style>
 
-      <ul className="example-2 bg-[#27272A] border-2 border-white rounded-2xl p-3">
+      <ul className="example-2 border-[#27272A] border-2 backdrop-blur-sm rounded-2xl p-3">
         {socialLinks.map((link, index) => (
           <li key={index} className="icon-content">
-            <a href={link.href} aria-label={link.label} data-social={link.label.toLowerCase()}>
+            <a
+              href={link.href}
+              aria-label={link.label}
+              data-social={link.label.toLowerCase()}
+            >
               <div className="filled"></div>
               {link.icon}
             </a>

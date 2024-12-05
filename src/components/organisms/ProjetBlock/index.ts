@@ -1,1 +1,1 @@
-export * from './ProjetBlock';
+export * from "./ProjetBlock";

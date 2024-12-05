@@ -1,1 +1,1 @@
-export * from './ParcoursComponent';
+export * from "./ParcoursComponent";

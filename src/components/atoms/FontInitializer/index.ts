@@ -1,1 +1,1 @@
-export * from './FontInitializer';
+export * from "./FontInitializer";

@@ -1,4 +1,4 @@
-import { PublicLayout } from '@/components/templates/PublicLayout';
+import { PublicLayout } from "@/components/templates/PublicLayout";
 
 export const BilanPage = () => {
   return (

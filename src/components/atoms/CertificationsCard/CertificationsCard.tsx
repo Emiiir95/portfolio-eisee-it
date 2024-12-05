@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Typography } from "../Typography/Typography";
@@ -10,7 +11,13 @@ interface CertificationsCardProps {
   description: string;
 }
 
-export function CertificationsCard({ index, logo, question, certification, description }: CertificationsCardProps) {
+export function CertificationsCard({
+  index,
+  logo,
+  question,
+  certification,
+  description,
+}: CertificationsCardProps) {
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
 
   const toggleFlip = (index: number) => {
@@ -35,7 +42,7 @@ export function CertificationsCard({ index, logo, question, certification, descr
                   Certificat
                 </Button>
                 <Button onClick={() => toggleFlip(index)} className="hover">
-                  {question} 
+                  {question}
                 </Button>
               </div>
             </div>
@@ -43,7 +50,11 @@ export function CertificationsCard({ index, logo, question, certification, descr
 
           {/* Face arrière */}
           <div className="absolute w-full h-full bg-[#1D1724] via-coral to-bisque flex flex-col justify-center items-center shadow-md rounded-xl border border-coral [backface-visibility:hidden] [transform:rotateY(180deg)]">
-            <Typography align="center" marginClassName="mt-2" variant="h3" customClassName="text-sm text-gray-500 leading-[1.4] p-5">
+            <Typography
+              align="center"
+              variant="h3"
+              customClassName="text-sm text-gray-500 leading-[1.4] p-3"
+            >
               {description}
             </Typography>
             <div>

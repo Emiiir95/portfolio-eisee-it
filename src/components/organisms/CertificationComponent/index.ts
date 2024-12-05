@@ -1,1 +1,1 @@
-export * from './CertificationComponent';
+export * from "./CertificationComponent";
