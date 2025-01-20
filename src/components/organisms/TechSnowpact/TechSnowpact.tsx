@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import stackDocker from "@/assets/images/tech_snow/stack-docker.png";
 import stackExpress from "@/assets/images/tech_snow/stack-express.png";

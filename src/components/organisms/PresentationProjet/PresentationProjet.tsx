@@ -1,4 +1,3 @@
-import React from "react";
 import github from "@/assets/images/projet_tools/github.png";
 import react from "@/assets/images/projet_tools/react.png";
 import slack from "@/assets/images/projet_tools/slack.png";

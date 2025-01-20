@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import { Rating } from "flowbite-react";
 import { Select } from "../Select";

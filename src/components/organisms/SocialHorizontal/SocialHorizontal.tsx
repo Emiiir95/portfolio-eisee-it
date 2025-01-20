@@ -1,29 +1,22 @@
-import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 const socialLinks = [
   {
-    href: "mailto:example@example.com",
+    href: "mailto:emir.metis.sen@gmail.com",
     label: "Email",
     icon: <EmailIcon style={{ width: "70%", height: "70%" }} />,
   },
   {
-    href: "https://linkedin.com/",
+    href: "https://www.linkedin.com/in/emir-sen-522475271/",
     label: "LinkedIn",
     icon: <LinkedInIcon style={{ width: "70%", height: "70%" }} />,
   },
   {
-    href: "https://www.github.com/",
+    href: "https://github.com/Emiiir95",
     label: "GitHub",
     icon: <GitHubIcon style={{ width: "70%", height: "70%" }} />,
-  },
-  {
-    href: "https://www.instagram.com/",
-    label: "Instagram",
-    icon: <InstagramIcon style={{ width: "70%", height: "70%" }} />,
   },
 ];
 

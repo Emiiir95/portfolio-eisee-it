@@ -1,4 +1,3 @@
-import React from "react";
 import { HeaderSnowpact } from "@/components/organisms/HeaderSnowpact";
 import { TestimonialSnowpact } from "@/components/organisms/TestimonialSnowpact";
 import { SnowpactTeam } from "@/components/organisms/SnowpactTeam";

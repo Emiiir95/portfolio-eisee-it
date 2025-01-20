@@ -1,4 +1,3 @@
-import React from "react";
 import { PresentationProjet } from "@/components/organisms/PresentationProjet";
 import { ProjetBlock } from "@/components/organisms/ProjetBlock";
 import { PublicLayout } from "@/components/templates/PublicLayout";

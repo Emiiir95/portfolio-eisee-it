@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "@/components/atoms/Typography/Typography";
 
 interface CVComponentProps {
@@ -29,7 +28,7 @@ export function CVComponent({ description, download }: CVComponentProps) {
       <div className="relative duration-300 hover:-rotate-0 -rotate-12 group border-purple-900 border-4 overflow-hidden rounded-2xl h-52 w-72 bg-purple-800 p-5 flex flex-col items-start gap-4">
         <div className="text-gray-50">
           <span className="font-bold text-5xl">Emir</span>
-          <p className="text-xs">Developeur</p>
+          <p className="text-xs">Développeur</p>
         </div>
         <a href={download} download="Mon_CV.pdf">
           <button className="duration-300 hover:bg-purple-900 border hover:text-gray-50 bg-gray-50 font-semibold text-purple-800 px-3 py-2 flex flex-row items-center gap-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">

@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import htmlIcon from "@/assets/images/tech_emir/htmlIcon.png";
 import cssIcon from "@/assets/images/tech_emir/cssIcon.png";

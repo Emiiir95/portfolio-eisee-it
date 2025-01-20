@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "../../components/pages/HomePage";
 import { Veille } from "@/components/pages/VeillePage";

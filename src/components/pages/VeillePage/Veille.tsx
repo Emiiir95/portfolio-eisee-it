@@ -1,4 +1,3 @@
-import React from "react";
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import { Alert } from "flowbite-react";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
@@ -20,39 +19,47 @@ export const Veille = () => {
     },
     {
       id: 2,
-      title: "Le « no code » bouscule les métiers et les compétences",
-      date: "18/07/2024",
-      author: "Estelle Durand",
-      href: "https://www.centre-inffo.fr/innovation-formation/articles/le-no-code-bouscule-les-metiers-et-les-competences",
-      description:
-        "Le no-code révolutionne les métiers en rendant possible la création d'applications sans compétences en programmation. Ce mouvement fait émerger de nouveaux métiers comme celui de product builder no-code et offre des opportunités de reconversion ou d'évolution professionnelle. La certification RNCP associée, portée par l'École Cube, répond à ces nouveaux besoins en compétences. Le no-code attire des profils variés, du marketing aux RH, en facilitant leur participation à des projets digitaux. Des organismes comme Contournement utilisent aussi le no-code pour initier les non-spécialistes au développement et susciter des vocations.",
+      title:
+        "IA : comment créer une application à partir d'une image et sans savoir coder ?",
+      date: "",
+      author: "",
+      href: "https://www.futura-sciences.com/tech/questions-reponses/intelligence-artificielle-ia-creer-application-partir-image-savoir-coder-21581/",
+      description: "",
       imageUrl:
-        "https://www.centre-inffo.fr/content/uploads/cache/2024/07/pierre-launay-ecole-cube/4154700801.jpg",
+        "https://cdn.futura-sciences.com/cdn-cgi/image/width=1920,quality=60,format=auto/sources/images/Cr%C3%A9er%20application.jpg",
       rating: 5,
     },
     {
       id: 3,
-      title: "No-code oui, mais No norme",
-      date: "12/09/2024",
-      author: "Thomas Pagbe",
-      href: "https://www.itforbusiness.fr/no-code-oui-mais-pas-no-norme-81658",
-      description:
-        "Le no-code révolutionne les métiers en rendant possible la création d'applications sans compétences en programmation. Ce mouvement démocratise la digitalisation, fait émerger de nouveaux métiers comme celui de product builder no-code et offre des opportunités de reconversion ou d'évolution professionnelle. La certification RNCP associée, portée par l'École Cube, répond à ces nouveaux besoins en compétences. Le no-code attire des profils variés, du marketing aux RH, en facilitant leur participation à des projets digitaux. Des organismes comme Contournement utilisent aussi le no-code pour initier les non-spécialistes au développement et susciter des vocations.",
+      title: "",
+      date: "",
+      author: "",
+      href: "https://www.tremplin-numerique.org/wordpress-automatic",
+      description: "",
       imageUrl:
-        "https://www.itforbusiness.fr/wp-content/uploads/2024/09/AFNOR-Low-Code-No-Code-shutterstock_2230902901.jpg",
+        "https://www.tremplin-numerique.org/wp-content/uploads/2024/11/L.png",
       rating: 5,
     },
     {
       id: 4,
-      title:
-        "Paradoxe du low code et du no code : libérer le temps des pros de l'IT, mais créer de nouveaux problèmes",
-      date: "04/04/2023 (mis à jour le 04/06/2024)",
-      author: "Joe McKendrick",
-      href: "https://www.zdnet.fr/actualites/paradoxe-du-low-code-et-du-no-code-liberer-le-temps-des-pros-de-l-it-mais-creer-de-nouveaux-problemes-39956550.htm",
-      description:
-        "Le low code et le no code simplifient la création d'applications et allègent la charge des équipes IT, mais engendrent des défis comme la prolifération d'applications non standardisées et la gestion de la complexité accrue. Bien qu'efficaces pour automatiser et moderniser les processus, ces outils nécessitent une supervision IT pour garantir sécurité, conformité et cohérence. Les professionnels doivent encadrer les utilisateurs métiers en définissant des normes et processus, et éviter des chevauchements inutiles d'applications. Les gains de temps réalisés sont souvent redirigés vers la gestion et l'intégration de ces nouveaux écosystèmes d'applications.",
+      title: "",
+      date: "",
+      author: "",
+      href: "https://www.objetconnecte.com/le-developpement-web-est-il-sur-le-point-datteindre-son-apogee-a-laube-de-2025/",
+      description: "",
       imageUrl:
-        "https://www.zdnet.fr/wp-content/uploads/zdnet/2024/02/WorkerKeyboard-750x410.jpg",
+        "https://www.objetconnecte.com/wp-content/uploads/2024/11/Le-developpement-web-est-il-sur-le-point-datteindre-son-apogee-a-laube-de-2025-.png",
+      rating: 5,
+    },
+    {
+      id: 4,
+      title: "",
+      date: "",
+      author: "",
+      href: "https://www.clubic.com/actualite-545339-deux-failles-de-securite-majeures-dans-un-plugin-wordpress-menacent-encore-des-centaines-de-milliers-de-sites.html",
+      description: "",
+      imageUrl:
+        "https://pic.clubic.com/c08f8bb52256776/1600x828/smart/hacking.webp",
       rating: 5,
     },
   ];

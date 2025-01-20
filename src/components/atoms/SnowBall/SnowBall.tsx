@@ -1,4 +1,3 @@
-import React from "react";
 import { Snowfall } from "react-snowfall";
 import { Typography } from "../Typography/Typography";
 import { useState } from "react";

@@ -1,4 +1,3 @@
-import React from "react";
 import { SnowBall } from "@/components/atoms/SnowBall/SnowBall";
 import avatarEmir from "@/assets/images/avatar/avatarEmir.png";
 // import avatarEmir2 from '@/assets/images/avatar/avatarEmir2.png';

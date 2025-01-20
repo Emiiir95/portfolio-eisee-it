@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import pixLogo from "@/assets/images/pix-logo.png";
 import cnilLogo from "@/assets/images/cnil-logo.png";

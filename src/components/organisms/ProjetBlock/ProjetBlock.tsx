@@ -1,4 +1,3 @@
-import React from "react";
 import { ProjetDrawer } from "@/components/atoms/ProjetDrawer";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import signaleoIcon from "@/assets/images/projet_logo/signaleo.png";

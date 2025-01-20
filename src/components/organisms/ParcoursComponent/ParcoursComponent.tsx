@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -6,13 +5,7 @@ import { Typography } from "@/components/atoms/Typography/Typography";
 import Grid from "@mui/material/Grid";
 
 const parcours = [
-  { title: "Pizzeria", lieu: "Mn Pizza", ville: "Andresy", date: "2024" },
-  {
-    title: "Alternance BTS",
-    lieu: "Esiee It / Snowpact",
-    ville: "Osny",
-    date: "2023-2025",
-  },
+  { title: "Pizzeria", lieu: "Mn Pizza", ville: "Andrésy", date: "2024" },
   {
     title: "Livreur Pressing",
     lieu: "LaundryHeap",
@@ -20,15 +13,21 @@ const parcours = [
     date: "2023-2024",
   },
   {
-    title: "Interim",
-    lieu: "Adequat",
-    ville: "Saint Ouen l'Aumône",
+    title: "Alternance BTS",
+    lieu: "Esiee It / Snowpact",
+    ville: "Osny",
+    date: "2023-2025",
+  },
+  {
+    title: "Intérim",
+    lieu: "Adéquat",
+    ville: "Saint-Ouen-l’Aumône",
     date: "2023",
   },
   {
-    title: "Bac spécialité math et SVT",
-    lieu: "Lycée Edmond Rostant",
-    ville: "Saint Ouen l'Aumône",
+    title: "Bac spécialité Mathématiques et SVT",
+    lieu: "Lycée Edmond Rostand",
+    ville: "Saint-Ouen-l’Aumône",
     date: "2023",
   },
   { title: "Chantier", lieu: "DEHETP", ville: "Saint-Gratien", date: "2022" },
@@ -39,16 +38,16 @@ const parcours = [
     date: "2022",
   },
   {
-    title: "Stage en menuiserie",
-    lieu: "DSEMenuiserie",
-    ville: "Osny",
-    date: "2019",
-  },
-  {
     title: "Brevet mention bien",
     lieu: "Collège Marcel Pagnol",
-    ville: "Saint Ouen l'Aumône",
+    ville: "Saint-Ouen-l’Aumône",
     date: "2020",
+  },
+  {
+    title: "Stage en menuiserie",
+    lieu: "DSE Menuiserie",
+    ville: "Osny",
+    date: "2019",
   },
 ];
 
@@ -69,7 +68,7 @@ export function ParcoursComponent() {
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Card
               style={{ backgroundColor: "#242F42", height: 180 }}
-              className="cursor-pointer md:p-4 md:py-4 py-2 md:px-2 px-2 hover:ease-in hover:saturate-150 hover:scale-[101%]"
+              className="md:p-4 md:py-4 py-2 md:px-2 px-2 hover:ease-in hover:saturate-150 hover:scale-[101%]"
             >
               <CardContent>
                 <Typography color="white" variant="componentSmallTitle">

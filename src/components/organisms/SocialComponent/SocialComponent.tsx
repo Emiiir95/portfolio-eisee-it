@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import SpeedDial from "@mui/material/SpeedDial";
 import SpeedDialAction from "@mui/material/SpeedDialAction";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -92,5 +91,3 @@ export function SocialComponentHorizontal() {
     </div>
   );
 }
-
-// import React from "react";

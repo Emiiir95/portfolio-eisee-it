@@ -1,4 +1,3 @@
-import React from "react";
 import { Image } from "react-bootstrap";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import clsx from "clsx";
