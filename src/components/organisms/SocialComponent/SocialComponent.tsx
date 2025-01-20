@@ -84,7 +84,7 @@ export function SocialComponentHorizontal() {
         >
           <action.image
             style={{ width: "100%", height: "100%" }}
-            className="hover:text-[#815CFC] hover:rotate-12 transition-transform duration-75 "
+            className="hovertext-[#815CFC] hover:rotate-12 transition-transform duration-75 "
           />
         </a>
       ))}

@@ -19,7 +19,7 @@ export const ProjetPage = () => {
 
         <div className="flex items-center justify-center flex-col z-50 mt-20 md:mt-40">
           <div className="mt-12">
-            <ProjetBlock></ProjetBlock>
+            <ProjetBlock />
           </div>
         </div>
       </div>

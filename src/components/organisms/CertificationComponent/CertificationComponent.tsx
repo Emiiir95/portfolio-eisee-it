@@ -11,7 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { CardContent } from "@mui/material";
+import { CardContent, useMediaQuery } from "@mui/material";
 
 const certificationData = [
   {
@@ -53,6 +53,8 @@ const certificationData = [
 ];
 
 export function CertificationComponent() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <div className="flex flex-col justify-center items-center">
       <Typography
@@ -88,8 +90,12 @@ export function CertificationComponent() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {isMobile === false && (
+          <>
+            <CarouselPrevious />
+            <CarouselNext />
+          </>
+        )}
       </Carousel>
     </div>
   );

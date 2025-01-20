@@ -99,11 +99,11 @@ export function HeaderSnowpact() {
         </div>
       </div>
 
-      <div className="w-full gap-20 flex-row flex border-t-[1px] border-b-[1px] py-12 px-52 border-[#232323] backdrop-blur-sm bg-opacity-30 bg-[#000000]">
-        <Typography marginClassName="mt-42" variant="h1" animated align="left">
+      <div className="flex items-center justify-center w-full md:h-auto h-[500px] md:gap-20 gap-5 md:flex-row flex-col border-t-[1px] border-b-[1px] md:py-12 md:px-52 border-[#232323] backdrop-blur-sm bg-opacity-30 bg-[#000000]">
+        <Typography variant="h1" animated>
           Quelques <span className="text-[#E12CF7]">réalisations</span>
         </Typography>
-        <div className="flex-row flex gap-12 h-12 w-auto">
+        <div className="md:flex-row flex-col flex md:gap-12 md:h-12 md:w-auto w-52 gap-6 sm:mt-0">
           <img src={Adn} />
           <img src={douanes} />
           <img src={Signaleo} />

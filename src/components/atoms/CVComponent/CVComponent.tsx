@@ -14,7 +14,7 @@ export function CVComponent({ description, download }: CVComponentProps) {
           variant="componentTitle"
           animated
         >
-          À propos de moi
+          <span className="text-[#FF2A28]">À propos</span> de moi
         </Typography>
         <Typography
           align="center"
@@ -31,7 +31,7 @@ export function CVComponent({ description, download }: CVComponentProps) {
           <p className="text-xs">Développeur</p>
         </div>
         <a href={download} download="Mon_CV.pdf">
-          <button className="duration-300 hover:bg-purple-900 border hover:text-gray-50 bg-gray-50 font-semibold text-purple-800 px-3 py-2 flex flex-row items-center gap-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+          <button className="duration-300 underline hover:bg-purple-900 border hover:text-gray-50 bg-gray-50 font-semibold text-purple-800 px-3 py-2 flex flex-row items-center gap-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
             Mon CV
             <svg
               className="w-6 h-6 fill-current"

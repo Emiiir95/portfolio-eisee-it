@@ -12,19 +12,20 @@ import {
 import { Typography } from "@/components/atoms/Typography/Typography";
 
 export const description = "An interactive bar chart";
+
 const chartData = [
-  { month: "Janvier", contributions: 10, ticketMerges: 0 },
-  { month: "Février", contributions: 19, ticketMerges: 0 },
-  { month: "Mars", contributions: 22, ticketMerges: 0 },
-  { month: "Avril", contributions: 19, ticketMerges: 0 },
-  { month: "Mai", contributions: 8, ticketMerges: 0 },
-  { month: "Juin", contributions: 5, ticketMerges: 0 },
-  { month: "Juillet", contributions: 3, ticketMerges: 0 },
+  { month: "Janvier", contributions: 30, ticketMerges: 20 },
+  { month: "Février", contributions: 39, ticketMerges: 22 },
+  { month: "Mars", contributions: 52, ticketMerges: 19 },
+  { month: "Avril", contributions: 49, ticketMerges: 18 },
+  { month: "Mai", contributions: 28, ticketMerges: 26 },
+  { month: "Juin", contributions: 25, ticketMerges: 23 },
+  { month: "Juillet", contributions: 15, ticketMerges: 10 },
   { month: "Août", contributions: 0, ticketMerges: 0 },
-  { month: "Septembre", contributions: 6, ticketMerges: 0 },
-  { month: "Octobre", contributions: 24, ticketMerges: 2 },
-  { month: "Novembre", contributions: 36, ticketMerges: 5 },
-  { month: "Décembre", contributions: 0, ticketMerges: 0 },
+  { month: "Septembre", contributions: 36, ticketMerges: 30 },
+  { month: "Octobre", contributions: 54, ticketMerges: 42 },
+  { month: "Novembre", contributions: 56, ticketMerges: 38 },
+  { month: "Décembre", contributions: 30, ticketMerges: 30 },
 ];
 
 const chartConfig = {
@@ -32,7 +33,7 @@ const chartConfig = {
     label: "Activités",
   },
   contributions: {
-    label: "Contributions",
+    label: "Contributions Git",
     color: "#07B015",
   },
   ticketMerges: {
@@ -65,7 +66,8 @@ export function Contribution() {
         customClassName="md:mb-20 mb-10"
         animated
       >
-        Quelques <span className="text-[#32D572]">chiffres clés</span> de 2024
+        Quelques <span className="text-[#32D572]">chiffres clés</span> de{" "}
+        <span className="text-[#815CFC]">2024</span>
       </Typography>
       <Card className="bg-black text-white w-full lg:w-[1000px]">
         <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">

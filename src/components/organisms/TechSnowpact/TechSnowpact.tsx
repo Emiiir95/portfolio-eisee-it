@@ -25,11 +25,6 @@ export const TechSnowpact = () => {
           colorBg: "bg-[#124E59]/80",
         },
         {
-          titleLogo: "React Native",
-          pathLogo: stackReact,
-          colorBg: "bg-[#124E59]/80",
-        },
-        {
           titleLogo: "Next.JS",
           pathLogo: stackNextjs,
           colorBg: "bg-black/80",

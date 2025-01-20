@@ -32,45 +32,6 @@ const icons = [
 export function CompetenceComponent() {
   return (
     <div className="flex items-center justify-center flex-col">
-      <style>{`
-        .competenceCard::before {
-          content: '';
-          position: absolute;
-          width: 1000%;
-          height: 1000%;
-          background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-          animation: rotBGimg 5s linear infinite;
-          transition: all 0.2s linear;
-          z-index: 1;
-          top: -450%;
-          left: -450%;
-          border-radius: 50%;
-        }
-
-        @keyframes rotBGimg {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        .sliding-animation {
-          animation: sliding 5s infinite linear;
-          z-index: 2;
-        }
-
-        @keyframes sliding {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-101%);
-          }
-        }
-      `}</style>
-
       <Typography
         align="center"
         customClassName="md:mb-20 mb-10"
@@ -78,17 +39,17 @@ export function CompetenceComponent() {
         color="white"
         animated
       >
-        Mes <span className="text-[#5F85FF]">compétences</span>
+        Mes <span className="text-[rgb(0,183,255)]">compétences</span>
       </Typography>
 
-      <div className="competenceCard w-auto h-auto relative flex place-content-center place-items-center overflow-hidden rounded-[20px]">
+      <div className="bg-gradient-to-b from-[rgb(0,183,255)] to-[rgb(255,48,255)] md:p-5 px-[1px] py-5 w-auto h-auto flex rounded-[20px] flex-wrap justify-center gap-9">
         {icons.map(
           (icon, index) =>
             icon.imgSrc && (
               <img
                 key={index}
                 src={icon.imgSrc}
-                className="sliding-animation w-[180px] p-5 z-10"
+                className="md:w-32 w-20"
                 alt={icon.altText}
               />
             ),

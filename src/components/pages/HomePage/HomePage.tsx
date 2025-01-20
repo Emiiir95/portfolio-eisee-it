@@ -1,7 +1,7 @@
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import { Hero } from "@/components/organisms/Hero";
 import { Contribution } from "@/components/organisms/Contribution";
-import { SocialComponentVertical } from "@/components/organisms/SocialComponent";
+// import { SocialComponentVertical } from "@/components/organisms/SocialComponent";
 import { useMediaQuery } from "@mui/material";
 
 import header from "@/assets/images/headerPortfolio.png";
@@ -20,11 +20,11 @@ export function HomePage() {
   return (
     <PublicLayout>
       <Hero img={isMobile ? headerMobile : header} />
-      {isMobile === false && (
+      {/* {isMobile === false && (
         <section className="fixed bottom-10 right-10">
           <SocialComponentVertical />
         </section>
-      )}
+      )} */}
 
       <section className="mt-10 flex justify-center">
         <SocialHorizontal />
