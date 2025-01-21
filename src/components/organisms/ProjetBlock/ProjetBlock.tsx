@@ -7,6 +7,7 @@ import snowpactIcon from "@/assets/images/projet_logo/snowpact.png";
 import adnIcon from "@/assets/images/projet_logo/adn.png";
 import innovIcon from "@/assets/images/projet_logo/innovHabitat.png";
 import evoliosIcon from "@/assets/images/projet_logo/evolios.png";
+import helioIcon from "@/assets/images/projet_logo/helio_logo.png";
 
 import { useState } from "react";
 import { Switch } from "@/components/atoms/Switch";
@@ -15,6 +16,19 @@ type Section = "professionnel" | "scolaire";
 
 export const ProjetBlock = () => {
   const projectsProfessionnel = [
+    {
+      name: "Hélio fitness",
+      link: "helio.fitness",
+      year: "2025",
+      description:
+        "Hélio Fitness est une salle de sport moderne offrant des cours variés et un coaching personnalisé.",
+      publicLabel: "Propriétaires de Hélio Fitness / leur communauté",
+      missionLabel:
+        "Migration du site WordPress vers Next.js, en améliorant et en veillant à conserver les fonctionnalités existantes tout en simplifiant la gestion des contenus pour le client.",
+      technoLabel: "npm, next, tailwind",
+      tools: "Slack, Github, VSCode",
+      image: helioIcon,
+    },
     {
       name: "Innov Habitat",
       link: "innovhabitat.eu",
@@ -159,20 +173,6 @@ export const ProjetBlock = () => {
     },
     {
       name: "Heritage",
-      link: "mon-resto-halal.com",
-      year: "2024",
-      description: "",
-      image: signaleoIcon,
-    },
-    {
-      name: "BDD",
-      link: "mon-resto-halal.com",
-      year: "2024",
-      description: "",
-      image: signaleoIcon,
-    },
-    {
-      name: "AlwaysData",
       link: "mon-resto-halal.com",
       year: "2024",
       description: "",

@@ -85,7 +85,9 @@ export function Header() {
         <div
           className={clsx(
             "flex justify-end fixed top-0 right-0 w-auto transition-colors duration-300 p-2 z-50 rounded-bl-2xl gap-5 items-center",
-            isScrolled ? "opacity-90 bg-[#815CFC]" : "bg-transparent",
+            isScrolled
+              ? "backdrop-blur-md bg-opacity-70 bg-[#5914C4] "
+              : "bg-transparent",
           )}
         >
           <IconButton onClick={toggleDrawer(true)}>

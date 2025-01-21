@@ -49,7 +49,7 @@ export function CompetenceComponent() {
               <img
                 key={index}
                 src={icon.imgSrc}
-                className="md:w-32 w-20"
+                className="md:w-32 w-20 hover:animate-jump"
                 alt={icon.altText}
               />
             ),

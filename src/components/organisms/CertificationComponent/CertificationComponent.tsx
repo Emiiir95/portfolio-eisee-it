@@ -33,13 +33,13 @@ const certificationData = [
       "Udemy est une plateforme en ligne offrant des milliers de cours créés par des experts, permettant aux utilisateurs d'apprendre à leur rythme dans divers domaines comme la technologie, le business et le développement personnel.",
   },
   {
-    logo: "",
+    logo: udemyLogo,
     pdf: "",
     description:
       "Cette certification évalue les compétences en cybersécurité, abordant les enjeux de sécurité des systèmes d'information, les bonnes pratiques et les méthodes de protection contre les cybermenaces.",
   },
   {
-    logo: "",
+    logo: udemyLogo,
     pdf: "",
     description:
       "Ce MOOC aborde les principes de la protection du secret défense, en sensibilisant aux enjeux de sécurité, aux réglementations applicables et aux pratiques de gestion des informations sensibles.",

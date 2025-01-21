@@ -1,16 +1,23 @@
 interface SelectProps {
   label: string;
   options: string[];
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  value?: string;
 }
-export function Select({ options, label }: SelectProps) {
+
+export function Select({ label, options, onChange, value }: SelectProps) {
   return (
     <div>
-      <label htmlFor="location" className="text-sm/6 font-medium text-white">
-        {label}
-      </label>
-      <select className="mt-2 w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-inset focus:ring-4 hover:ring-[#027BFF] sm:text-sm/6">
-        {options.map((option, index) => (
-          <option key={index}>{option}</option>
+      <label className="block text-sm font-medium text-gray-700">{label}</label>
+      <select
+        value={value}
+        onChange={onChange}
+        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      >
+        {options.map((option) => (
+          <option key={option} value={option}>
+            {option}
+          </option>
         ))}
       </select>
     </div>
