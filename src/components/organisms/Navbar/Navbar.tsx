@@ -20,7 +20,7 @@ import { SocialComponentHorizontal } from "../SocialComponent";
 const navItems = [
   {
     title: "Accueil",
-    to: "/HomePage",
+    to: "/",
     icon: <HomeIcon className="text-white" />,
   },
   {
@@ -45,7 +45,7 @@ const navItems = [
   },
 ];
 
-export function Header() {
+export function Navbar() {
   const { pathname } = useLocation();
 
   useEffect(() => {

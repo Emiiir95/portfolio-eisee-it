@@ -14,7 +14,7 @@ export function CVComponent({ description, download }: CVComponentProps) {
           variant="componentTitle"
           animated
         >
-          <span className="text-[#FF2A28]">À propos</span> de moi
+          <span className="text-[#5521B5]">À propos</span> de moi
         </Typography>
         <Typography
           align="center"

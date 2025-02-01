@@ -1,88 +1,101 @@
 import { SnowBall } from "@/components/atoms/SnowBall/SnowBall";
-import avatarEmir from "@/assets/images/avatar/avatarEmir.png";
-import avatarMurat from "@/assets/images/avatar/avatarMurat.png";
-import avatarStephane from "@/assets/images/avatar/avatarStephane.png";
+import amira from "@/assets/images/avatar/amira.webp";
+import yasin from "@/assets/images/avatar/yasin.webp";
+import gulsum from "@/assets/images/avatar/gulsum.webp";
+import anthony from "@/assets/images/avatar/anthony.webp";
+import semih from "@/assets/images/avatar/semih.webp";
+import fatih from "@/assets/images/avatar/fatih.webp";
+import kabir from "@/assets/images/avatar/kabir.webp";
+import alexandre from "@/assets/images/avatar/alexandre.webp";
+import mohamed from "@/assets/images/avatar/mohamed.webp";
+import sanae from "@/assets/images/avatar/sanae.webp";
+import yeliz from "@/assets/images/avatar/yeliz.webp";
+import fahmi from "@/assets/images/avatar/fahmi.webp";
+import farid from "@/assets/images/avatar/farid.webp";
+import emir from "@/assets/images/avatar/emir.webp";
+import murat from "@/assets/images/avatar/murat.webp";
+import stephane from "@/assets/images/avatar/stephane.webp";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import { Grid } from "@mui/material";
 
 const snowpactInfo = [
   {
-    avatar: avatarStephane,
+    avatar: stephane,
     name: "Stéphane",
     job: "Co-Fondateur",
   },
   {
-    avatar: avatarMurat,
+    avatar: murat,
     name: "Murat",
     job: "Co-Fondateur",
   },
   {
-    avatar: avatarEmir,
+    avatar: farid,
     name: "Farid",
     job: "Dév Fullstack",
   },
   {
-    avatar: avatarEmir,
+    avatar: alexandre,
     name: "Alexandre",
     job: "Dév Back",
   },
   {
-    avatar: avatarEmir,
+    avatar: yeliz,
     name: "Yeliz",
     job: "Photographe / Vidéaste",
   },
   {
-    avatar: avatarEmir,
+    avatar: yasin,
     name: "Yasin",
     job: "Dév Fullstack",
   },
   {
-    avatar: avatarEmir,
+    avatar: sanae,
     name: "Sanae",
     job: "Designer UI / UX",
   },
   {
-    avatar: avatarEmir,
+    avatar: kabir,
     name: "Kabir",
     job: "Testeur QA / Dév Back",
   },
   {
-    avatar: avatarEmir,
+    avatar: fatih,
     name: "Fatih",
     job: "Apprenti Dév",
   },
   {
-    avatar: avatarEmir,
+    avatar: gulsum,
     name: "Gülsüm",
     job: "Apprenti Dév",
   },
   {
-    avatar: avatarEmir,
+    avatar: emir,
     name: "Emir",
     job: "Apprenti Dév",
   },
   {
-    avatar: avatarEmir,
+    avatar: fahmi,
     name: "Fahmi",
     job: "Dév Fullstack",
   },
   {
-    avatar: avatarEmir,
+    avatar: semih,
     name: "Semih",
     job: "Apprenti Dév",
   },
   {
-    avatar: avatarEmir,
+    avatar: mohamed,
     name: "Mohamed",
     job: "Business Analyst",
   },
   {
-    avatar: avatarEmir,
+    avatar: anthony,
     name: "Anthony",
     job: "Dév Junior",
   },
   {
-    avatar: avatarEmir,
+    avatar: amira,
     name: "Amira",
     job: "Apprentie",
   },

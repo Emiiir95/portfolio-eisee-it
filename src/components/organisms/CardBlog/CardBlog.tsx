@@ -22,7 +22,7 @@ export function CardBlog({
   rating = 1,
 }: CardBlogProps) {
   return (
-    <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-28 sm:pt-48 lg:pt-40">
+    <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-28 sm:pt-48 lg:pt-40 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0px_0px_40px_#ED6D03]">
       <img
         alt="blog"
         src={articleimageUrl}
@@ -47,8 +47,8 @@ export function CardBlog({
         </Typography>
       </a>
       <ButtonDrawerBlog
-        ButtonColor="warning"
-        ButtonLabel="Voir le résumé"
+        articleLink={href}
+        buttonLabel="Voir le résumé"
         articleAuthor={author}
         articleResume={description}
         articleDate={date}

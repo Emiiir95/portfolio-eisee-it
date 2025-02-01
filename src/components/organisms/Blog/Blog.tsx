@@ -27,6 +27,11 @@ export function Blog({ posts }: BlogProps) {
   const filteredAndSortedPosts = posts
     .filter((post) => {
       if (
+        filterSource === "Google Alerts" &&
+        (!post.source || !post.source.includes("Google Alerts"))
+      )
+        return false;
+      if (
         filterSource === "Newsletter" &&
         (!post.source || !post.source.includes("Newsletter"))
       )
@@ -56,10 +61,11 @@ export function Blog({ posts }: BlogProps) {
     });
 
   return (
-    <div className="mx-auto mt-10 md:mt-40 max-w-7xl px-6 lg:px-8">
+    <div className="mx-auto mt-10 md:mt-40 max-w-7xl px-6 lg:px-8 min-h-screen">
       <div className="mx-auto max-w-2xl text-center">
         <Typography animated variant="componentTitle">
-          Quels sont les <span className="text-[#31e481]">impacts</span> du{" "}
+          Quels sont les <span className="text-[#31e481]">impacts</span> de{" "}
+          <span className="text-[#c031e4]">l&apos;IA</span> et du{" "}
           <span className="text-[#c031e4]">no-code</span> sur le métier de{" "}
           <span className="text-[#027BFF]">développeur ?</span>
         </Typography>
@@ -78,7 +84,7 @@ export function Blog({ posts }: BlogProps) {
         <Select
           onChange={(e) => setFilterSource(e.target.value)}
           label="Filtrer par source"
-          options={["Tous", "Newsletter", "Feedly"]}
+          options={["Tous", "Google Alerts", "Newsletter", "Feedly"]}
         />
         <Select
           value={sortRating}

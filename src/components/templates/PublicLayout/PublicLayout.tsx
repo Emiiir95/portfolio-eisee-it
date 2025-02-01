@@ -1,5 +1,5 @@
 import { Footer } from "@/components/organisms/Footer";
-import { Header } from "@/components/organisms/Header";
+import { Navbar } from "@/components/organisms/Navbar";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export function PublicLayout({ children }: PublicLayoutProps) {
     <div className="flex flex-col bg-black">
       <div className="flex flex-col w-full flex-grow">
         <ScrollToTop />
-        <Header />
+        <Navbar />
         {children}
       </div>
       <Footer />
