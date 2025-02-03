@@ -9,6 +9,18 @@ import helioIcon from "@/assets/images/projet_logo/helio_logo.png";
 
 export const realisationsProfessionnels = [
   {
+    url: "ditibahi",
+    title: "Ditib AHI",
+    link: "ditibahi.org",
+    year: "2025",
+    description: "",
+    publicLabel: "",
+    missionLabel: "",
+    technoLabel: "pnpm, next, tailwind",
+    tools: "Slack, Github, VSCode",
+    image: helioIcon,
+  },
+  {
     url: "helio-fitness",
     title: "Hélio fitness",
     link: "helio.fitness",

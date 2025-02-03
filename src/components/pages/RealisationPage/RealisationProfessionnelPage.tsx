@@ -1,6 +1,15 @@
 import { useParams } from "react-router-dom";
 import { realisationsProfessionnels } from "./realisationsData";
 import { PublicLayout } from "@/components/templates/PublicLayout";
+import { ProjectProuve } from "@/components/organisms/ProjectProuve";
+import { ProjectHeader } from "@/components/organisms/ProjectHeader";
+import hero from "@/assets/images/headerPortfolio.png";
+import farid from "@/assets/images/avatar/farid.webp";
+import { ProjectTeam } from "@/components/organisms/ProjectTeam";
+import { TextWithIcon } from "@/components/organisms/TextWithIcon";
+import { MdArchitecture } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 export function RealisationProfessionnelPage() {
   const { url } = useParams();
@@ -19,99 +28,72 @@ export function RealisationProfessionnelPage() {
 
   return (
     <PublicLayout>
-      <div className="container mx-auto px-4 py-32">
-        <div className="max-w-4xl mx-auto bg-black/90 rounded-2xl shadow-[0_0_100px_rgba(0,255,255,0.2)] overflow-hidden">
-          {/* En-tête avec image */}
-          <div className="relative h-48 bg-gradient-to-r from-blue-600 to-purple-600">
-            <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
-              <img
-                src={realisation.image}
-                alt={realisation.title}
-                className="w-32 h-32 rounded-full border-4 border-black object-cover shadow-[0_0_100px_rgba(255,255,255,0.2)]"
-              />
-            </div>
-          </div>
+      <ProjectHeader realisation={realisation} />
+      <ProjectTeam teams={teams} />
+      <TextWithIcon tab={DonorSpaceInfo} />
 
-          {/* Contenu */}
-          <div className="pt-20 pb-8 px-6 md:px-12">
+      <ProjectProuve platforms={platformsData} title="test" />
+      <div className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
-              <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                {realisation.title}
-              </h1>
-              <div className="mt-6 space-y-4">
-                <div className="flex flex-col items-center justify-center space-y-2">
-                  <div className="flex items-center flex-col space-x-2">
-                    <h2 className="text-lg font-semibold text-gray-300 mb-2">
-                      Participation sur le projet
-                    </h2>
-                    <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm ring-1 ring-purple-500/20">
-                      {realisation.year}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-gray-800">
-                  <h2 className="text-lg font-semibold text-gray-300 mb-2">
-                    Technologies
-                  </h2>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {realisation.technoLabel.split(",").map((tech, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-full text-sm ring-1 ring-emerald-500/20"
-                      >
-                        {tech.trim()}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-gray-800">
-                  <h2 className="text-lg font-semibold text-gray-300 mb-2">
-                    Outils
-                  </h2>
-                  <div className="flex flex-wrap justify-center gap-2">
-                    {realisation.tools.split(",").map((tool, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-teal-500/10 text-teal-400 rounded-full text-sm ring-1 ring-teal-500/20"
-                      >
-                        {tool.trim()}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {realisation.link && (
-                  <div className="pt-8">
-                    <a
-                      href={`https://${realisation.link}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-white font-semibold transition-transform hover:scale-105 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
-                    >
-                      Visiter le site
-                      <svg
-                        className="ml-2 w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                )}
-              </div>
+              <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                Pour résumé ce projet
+              </h2>
             </div>
+            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+              {stats.map((stat) => (
+                <div key={stat.id} className="flex flex-col bg-white/5 p-8">
+                  <dt className="text-sm/6 font-semibold text-gray-300">
+                    {stat.name}
+                  </dt>
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-white">
+                    {stat.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </div>
     </PublicLayout>
   );
 }
+
+const platformsData = [
+  { name: "figma", image: hero },
+  { name: "Platform 1", image: hero },
+  { name: "Platform 1", image: hero },
+  { name: "Platform 2", image: hero },
+];
+const teams = [
+  { avatar: farid, name: "figma", job: "hero" },
+  { avatar: farid, name: "Platform 1", job: "hero" },
+  { avatar: farid, name: "Platform 1", job: "hero" },
+  { avatar: farid, name: "Platform 2", job: "hero" },
+];
+
+const stats = [
+  { id: 1, name: "Commit", value: "800" },
+  { id: 2, name: "Composants developper", value: "30" },
+  { id: 3, name: "Pages", value: "14" },
+  { id: 4, name: "Semaines", value: "2" },
+];
+
+const DonorSpaceInfo = [
+  {
+    icon: MdArchitecture,
+    alt: "building",
+    label: "Architecture",
+  },
+  {
+    icon: FaCode,
+    alt: "credit card",
+    label: "Développeur front",
+  },
+  {
+    icon: FaMagnifyingGlass,
+    alt: "gift",
+    label: "SEO",
+  },
+];

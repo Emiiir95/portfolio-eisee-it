@@ -118,12 +118,7 @@ export function SnowpactTeam() {
       >
         {snowpactInfo.map((info, index) => (
           <Grid item spacing={3} key={index}>
-            <SnowBall
-              avatar={info.avatar}
-              avatar2={info.avatar}
-              name={info.name}
-              job={info.job}
-            />
+            <SnowBall avatar={info.avatar} name={info.name} job={info.job} />
           </Grid>
         ))}
       </Grid>
