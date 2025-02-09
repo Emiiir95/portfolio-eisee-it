@@ -21,7 +21,7 @@ export function ProjectTeam({ teams }: ProjectTeamProps) {
         marginClassName="mb-5"
         customClassName="text-[#5813C5]"
       >
-        Notre équipe sur ce projet !
+        Mon équipe !
       </Typography>
       <div className="flex sm:flex-row flex-col justify-center gap-3 items-center">
         {teams.map((items, index) => (

@@ -1,7 +1,7 @@
 import { Typography } from "@/components/atoms/Typography/Typography";
-import pixLogo from "@/assets/images/pix-logo.png";
-import cnilLogo from "@/assets/images/cnil-logo.png";
-import udemyLogo from "@/assets/images/logoUdemy.png";
+import pixLogo from "@/assets/images/pix-logo.webp";
+import cnilLogo from "@/assets/images/cnil-logo.webp";
+import udemyLogo from "@/assets/images/logoUdemy.webp";
 import { CertificationsCard } from "@/components/atoms/CertificationsCard/CertificationsCard";
 import certificationPix from "@/assets/document/attestation-pix.pdf";
 import {

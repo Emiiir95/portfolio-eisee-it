@@ -15,7 +15,7 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import { SocialComponentHorizontal } from "../SocialComponent";
+import { SocialHorizontal } from "../SocialHorizontal";
 
 const navItems = [
   {
@@ -103,8 +103,8 @@ export function Navbar() {
                 width: "300px",
                 borderRadius: "0 30px 30px 0",
                 p: 7,
-                boxShadow: "0px 4px 12px rgba(129, 92, 252, 1)",
-                borderRight: "1px solid #815CFC",
+                boxShadow: "0px 4px 12px #fff",
+                borderRight: "1px solid #fff",
               },
             }}
           >
@@ -121,8 +121,8 @@ export function Navbar() {
                     </IconButton>
                   </Link>
                 ))}
-                <div className="absolute bottom-10">
-                  <SocialComponentHorizontal />
+                <div className="absolute bottom-5 w-52 left-1/2 -translate-x-1/2">
+                  <SocialHorizontal />
                 </div>
               </div>
             )}

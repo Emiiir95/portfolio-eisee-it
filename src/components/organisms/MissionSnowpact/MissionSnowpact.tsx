@@ -1,5 +1,5 @@
 import { Typography } from "@/components/atoms/Typography/Typography";
-import fondApple from "@/assets/images/fondApple.jpg";
+import fondApple from "@/assets/images/fondApple.webp";
 
 export function MissionSnowpact() {
   return (

@@ -1,7 +1,7 @@
 import { PresentationProjet } from "@/components/organisms/PresentationProjet";
 import { ProjetBlock } from "@/components/organisms/ProjetBlock";
 import { PublicLayout } from "@/components/templates/PublicLayout";
-import fond from "@/assets/images/fond.png";
+import fond from "@/assets/images/fond.webp";
 
 export const ProjetPage = () => {
   return (

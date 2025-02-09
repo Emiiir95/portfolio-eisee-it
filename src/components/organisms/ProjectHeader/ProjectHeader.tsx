@@ -17,11 +17,11 @@ export function ProjectHeader({ realisation }: ProjectHeaderProps) {
       <div className="max-w-4xl mx-auto bg-black/90 rounded-2xl shadow-[0_0_100px_rgba(0,255,255,0.2)] overflow-hidden">
         {/* En-tête avec image */}
         <div className="relative h-32 bg-gradient-to-r from-emerald-600 to-teal-600">
-          <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
+          <div className="absolute rounded-3xl border-4 bg-white border-black -bottom-16 left-1/2 transform -translate-x-1/2 shadow-[0_0_100px_rgba(255,255,255,0.2)]">
             <img
               src={realisation.image}
               alt={realisation.title}
-              className="w-32 h-32 rounded-full border-4 border-black object-cover shadow-[0_0_100px_rgba(255,255,255,0.2)]"
+              className="w-32 h-32 p-2 rounded-2xl object-cover "
             />
           </div>
         </div>

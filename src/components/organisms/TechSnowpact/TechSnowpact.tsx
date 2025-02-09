@@ -1,17 +1,17 @@
 import { Typography } from "@/components/atoms/Typography/Typography";
-import stackDocker from "@/assets/images/tech_snow/stack-docker.png";
-import stackExpress from "@/assets/images/tech_snow/stack-express.png";
-import stackFigma from "@/assets/images/tech_snow/stack-figma.png";
-import stackFirebase from "@/assets/images/tech_snow/stack-firebase.png";
-import stackGoogleAnalytics from "@/assets/images/tech_snow/stack-google-analytics.png";
-import stackGoogleCloud from "@/assets/images/tech_snow/stack-google-cloud.png";
-import stackJs from "@/assets/images/tech_snow/stack-javascript.png";
-import stackNextjs from "@/assets/images/tech_snow/stack-nextjs.png";
-import stackNode from "@/assets/images/tech_snow/stack-nodejs.png";
-import stackReact from "@/assets/images/tech_snow/stack-react.png";
-import stackStripe from "@/assets/images/tech_snow/stack-stripe.png";
-import stackTs from "@/assets/images/tech_snow/stack-typescript.png";
-import stackAWS from "@/assets/images/tech_snow/stack-aws.png";
+import stackDocker from "@/assets/images/tech_snow/stack-docker.webp";
+import stackExpress from "@/assets/images/tech_snow/stack-express.webp";
+import stackFigma from "@/assets/images/tech_snow/stack-figma.webp";
+import stackFirebase from "@/assets/images/tech_snow/stack-firebase.webp";
+import stackGoogleAnalytics from "@/assets/images/tech_snow/stack-google-analytics.webp";
+import stackGoogleCloud from "@/assets/images/tech_snow/stack-google-cloud.webp";
+import stackJs from "@/assets/images/tech_snow/stack-javascript.webp";
+import stackNextjs from "@/assets/images/tech_snow/stack-nextjs.webp";
+import stackNode from "@/assets/images/tech_snow/stack-nodejs.webp";
+import stackReact from "@/assets/images/tech_snow/stack-react.webp";
+import stackStripe from "@/assets/images/tech_snow/stack-stripe.webp";
+import stackTs from "@/assets/images/tech_snow/stack-typescript.webp";
+import stackAWS from "@/assets/images/tech_snow/stack-aws.webp";
 import { TechBlocks } from "@/components/atoms/TechBlock/TechBlocks";
 
 export const TechSnowpact = () => {

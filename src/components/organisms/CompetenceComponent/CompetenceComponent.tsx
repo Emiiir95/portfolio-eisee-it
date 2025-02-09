@@ -1,17 +1,18 @@
 import { Typography } from "@/components/atoms/Typography/Typography";
-import htmlIcon from "@/assets/images/tech_emir/htmlIcon.png";
-import cssIcon from "@/assets/images/tech_emir/cssIcon.png";
-import javaIcon from "@/assets/images/tech_emir/javaIcon.png";
-import cIcon from "@/assets/images/tech_emir/cIcon.png";
-import canvaIcon from "@/assets/images/tech_emir/canvaIcon.png";
-import capcutIcon from "@/assets/images/tech_emir/capcutIcon.png";
-import pythonIcon from "@/assets/images/tech_emir/pythonIcon.png";
-import djangoIcon from "@/assets/images/tech_emir/djangoIcon.png";
-import jsIcon from "@/assets/images/tech_emir/jsIcon.png";
-import tsIcon from "@/assets/images/tech_emir/tsIcon.png";
-import reactIcon from "@/assets/images/tech_emir/reactIcon.png";
-import nextIcon from "@/assets/images/tech_emir/nextIcon.png";
-import figmaIcon from "@/assets/images/tech_emir/figmaIcon.png";
+import htmlIcon from "@/assets/images/tech_emir/htmlIcon.webp";
+import cssIcon from "@/assets/images/tech_emir/cssIcon.webp";
+import javaIcon from "@/assets/images/tech_emir/javaIcon.webp";
+import cIcon from "@/assets/images/tech_emir/cIcon.webp";
+import canvaIcon from "@/assets/images/tech_emir/canvaIcon.webp";
+import capcutIcon from "@/assets/images/tech_emir/capcutIcon.webp";
+import pythonIcon from "@/assets/images/tech_emir/pythonIcon.webp";
+import djangoIcon from "@/assets/images/tech_emir/djangoIcon.webp";
+import jsIcon from "@/assets/images/tech_emir/jsIcon.webp";
+import tsIcon from "@/assets/images/tech_emir/tsIcon.webp";
+import reactIcon from "@/assets/images/tech_emir/reactIcon.webp";
+import nextIcon from "@/assets/images/tech_emir/nextIcon.webp";
+import figmaIcon from "@/assets/images/tech_emir/figmaIcon.webp";
+import tailwindIcon from "@/assets/images/tech_emir/tailwindIcon.webp";
 
 const icons = [
   { imgSrc: htmlIcon, altText: "HTML Icon" },
@@ -27,6 +28,7 @@ const icons = [
   { imgSrc: figmaIcon, altText: "Figma Icon" },
   { imgSrc: canvaIcon, altText: "Canva Icon" },
   { imgSrc: capcutIcon, altText: "Capcut Icon" },
+  { imgSrc: tailwindIcon, altText: "Capcut Icon" },
 ];
 
 export function CompetenceComponent() {

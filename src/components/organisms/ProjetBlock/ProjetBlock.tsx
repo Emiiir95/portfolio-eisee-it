@@ -1,4 +1,4 @@
-import { ProjetDrawer } from "@/components/atoms/ProjetDrawer";
+import { ProjetCard } from "@/components/atoms/ProjetCard";
 import { Typography } from "@/components/atoms/Typography/Typography";
 import { useState } from "react";
 import { Switch } from "@/components/atoms/Switch";
@@ -59,7 +59,7 @@ export const ProjetBlock = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
               {realisationsProfessionnels.map((projet) => (
                 <>
-                  <ProjetDrawer
+                  <ProjetCard
                     key={projet.url}
                     url={projet.url}
                     title={projet.title}
@@ -79,7 +79,7 @@ export const ProjetBlock = () => {
           {activeSection === "scolaire" && (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
               {realisationsScolaires.map((projet) => (
-                <ProjetDrawer
+                <ProjetCard
                   key={projet.url}
                   url={projet.url}
                   title={projet.title}

@@ -1,8 +1,8 @@
-import github from "@/assets/images/projet_tools/github.png";
-import react from "@/assets/images/projet_tools/react.png";
-import slack from "@/assets/images/projet_tools/slack.png";
-import vsCode from "@/assets/images/projet_tools/vsCode.png";
-import linear from "@/assets/images/projet_tools/linear.png";
+import github from "@/assets/images/projet_tools/github.webp";
+import react from "@/assets/images/projet_tools/react.webp";
+import slack from "@/assets/images/projet_tools/slack.webp";
+import vsCode from "@/assets/images/projet_tools/vsCode.webp";
+import linear from "@/assets/images/projet_tools/linear.webp";
 
 export function PresentationProjet() {
   return (

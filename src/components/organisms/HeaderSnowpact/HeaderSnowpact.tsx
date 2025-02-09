@@ -6,11 +6,11 @@ import {
   RocketIcon,
 } from "lucide-react";
 
-import Adn from "@/assets/images/rea_snow/adn.png";
-import Mrh from "@/assets/images/rea_snow/mrh.png";
-import Signaleo from "@/assets/images/rea_snow/signaleo.png";
-import douanes from "@/assets/images/rea_snow/douanes.png";
-import header from "@/assets/images/headerSnowpact.png";
+import Adn from "@/assets/images/rea_snow/adn.webp";
+import Mrh from "@/assets/images/rea_snow/mrh.webp";
+import Signaleo from "@/assets/images/rea_snow/signaleo.webp";
+import douanes from "@/assets/images/rea_snow/douanes.webp";
+import header from "@/assets/images/headerSnowpact.webp";
 
 export function HeaderSnowpact() {
   const cards = [

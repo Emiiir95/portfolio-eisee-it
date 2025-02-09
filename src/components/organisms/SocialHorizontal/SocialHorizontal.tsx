@@ -134,8 +134,10 @@ export function SocialHorizontal() {
           <li key={index} className="icon-content">
             <a
               href={link.href}
+              target="_blank"
               aria-label={link.label}
               data-social={link.label.toLowerCase()}
+              rel="noreferrer"
             >
               <div className="filled"></div>
               {link.icon}
