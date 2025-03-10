@@ -51,7 +51,7 @@ export function CompetenceComponent() {
               <img
                 key={index}
                 src={icon.imgSrc}
-                className="md:w-32 w-20 hover:animate-jump"
+                className="md:w-20 w-12"
                 alt={icon.altText}
               />
             ),

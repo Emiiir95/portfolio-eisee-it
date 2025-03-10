@@ -33,7 +33,7 @@ export function RealisationProfessionnelPage() {
       />
       <ProjectStat stats={realisation.dataPage.stats} />
 
-      <div>But/ bjectif du projet et bilan</div>
+      <div className="text-white">But/ bjectif du projet et bilan</div>
     </PublicLayout>
   );
 }

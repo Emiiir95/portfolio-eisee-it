@@ -1,42 +1,46 @@
 import { PublicLayout } from "@/components/templates/PublicLayout";
-import { Hero } from "@/components/organisms/Hero";
 import { Contribution } from "@/components/organisms/Contribution";
-import { useMediaQuery } from "@mui/material";
-import header from "@/assets/images/headerPortfolio.webp";
-import headerMobile from "@/assets/images/headerMobile.webp";
 import emircv from "@/assets/document/CV_SEN_Emir.pdf";
-import { ParcoursComponent } from "@/components/organisms/ParcoursComponent";
 import { CertificationComponent } from "@/components/organisms/CertificationComponent";
 import { CVComponent } from "@/components/atoms/CVComponent";
 import { CompetenceComponent } from "@/components/organisms/CompetenceComponent";
-import { SocialHorizontal } from "@/components/organisms/SocialHorizontal";
 import { NeonBlur } from "@/components/atoms/NeonBlur";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import "./home.css";
+import emir from "@/assets/images/avataaars.png";
+import { Timeline } from "@/components/organisms/Timeline";
 
 export function HomePage() {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
   return (
     <PublicLayout>
-      <Hero img={isMobile ? headerMobile : header} />
-
-      <section className="mt-10 flex justify-center">
-        <SocialHorizontal />
-      </section>
+      <BackgroundBeamsWithCollision className="flex sm:flex-row flex-col-reverse">
+        <img src={emir} className="sm:pr-10" />
+        <div className="typewriter sm:pr-32">
+          <h1>Portfolio Emir</h1>
+        </div>
+      </BackgroundBeamsWithCollision>
 
       <CVComponent
         download={emircv}
-        description="Bonjour, je m'appelle Emir Sen, j'ai 19 ans et je suis actuellement en BTS SIO, option SLAM. Passionné par l'informatique depuis toujours, je me spécialise dans le développement web et les sites internet."
+        description="Bonjour, je m'appelle Emir Sen, j'ai 20 ans et je suis actuellement en BTS SIO, option SLAM. Passionné par l'informatique depuis toujours, je me spécialise dans le développement web et les sites internet."
       />
+      <Timeline />
 
       <section className="relative">
         {/* Effet de fond NeonBlur */}
         <NeonBlur customPosition="absolute -left-32 top-[50em]" />
-        <NeonBlur customPosition="absolute bg-[#209] -right-0 top-[10em]" />
-        <NeonBlur customPosition="absolute bg-[#18ACFF] -right-0 bottom-[20em]" />
+        <NeonBlur
+          customPosition="absolute -right-0 top-[10em]"
+          customColor="bg-[#209]"
+        />
+        <NeonBlur
+          customPosition="absolute -right-0 bottom-0"
+          customColor="bg-[#18ACFF]"
+        />
 
         {/* Contenu au premier plan */}
         <div className="relative flex flex-col items-center justify-center gap-20 md:gap-44 md:mx-60 mx-10 mt-32">
-          <ParcoursComponent />
+          {/* <ParcoursComponent /> */}
           <Contribution />
           <CompetenceComponent />
           <CertificationComponent />

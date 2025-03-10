@@ -9,12 +9,12 @@ export function ProjectStat({ stats }: ProjectStatProps) {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
             <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-              Pour résumé ce projet
+              Pour résumer ce projet
             </h2>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white/5 p-8">
+              <div key={stat.id} className="flex flex-col bg-white/10 p-8">
                 <dt className="text-sm/6 font-semibold text-gray-300">
                   {stat.name}
                 </dt>

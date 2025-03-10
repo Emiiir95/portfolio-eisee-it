@@ -43,7 +43,6 @@ export function SocialHorizontal() {
           left: 50%;
           transform: translateX(-50%);
           color: #fff;
-          padding: 6px 10px;
           border-radius: 5px;
           opacity: 0;
           visibility: hidden;
@@ -129,7 +128,7 @@ export function SocialHorizontal() {
         }
       `}</style>
 
-      <ul className="example-2 border-[#27272A] border-2 backdrop-blur-sm rounded-2xl p-3">
+      <ul className="example-2 px-3">
         {socialLinks.map((link, index) => (
           <li key={index} className="icon-content">
             <a

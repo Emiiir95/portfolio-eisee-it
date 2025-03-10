@@ -6,7 +6,7 @@ interface CVComponentProps {
 }
 export function CVComponent({ description, download }: CVComponentProps) {
   return (
-    <div className="bg-[#27272A] w-full p-11 flex gap-10 md:flex-row mt-20 flex-col justify-center items-center">
+    <div className=" w-full p-11 flex gap-10 md:flex-row mt-20 flex-col justify-center items-center">
       <div className="md:w-[30%] md:leading-[38px]">
         <Typography
           align="center"
