@@ -30,7 +30,7 @@ import signaleoWebCom from "@/assets/images/projet/signaleoWeb/slack.webp";
 import signaleoWebFigma from "@/assets/images/projet/signaleoWeb/figma.webp";
 import signaleoWebLinear from "@/assets/images/projet/signaleoWeb/linear.webp";
 
-import signaleoMobileApercu from "@/assets/images/projet/signaleoMobile/Interface.webp";
+import signaleoMobileApercu from "@/assets/images/projet/signaleoMobile/interface.webp";
 import signaleoMobileGithub from "@/assets/images/projet/signaleoMobile/github.webp";
 import signaleoMobileSlack from "@/assets/images/projet/signaleoMobile/slack.webp";
 import signaleoMobileFigma from "@/assets/images/projet/signaleoMobile/figma.webp";
