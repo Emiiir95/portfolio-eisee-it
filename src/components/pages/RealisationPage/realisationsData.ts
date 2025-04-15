@@ -64,21 +64,21 @@ import epiClerk from "@/assets/images/projet/ecole/gestionEpi/clerk.png";
 import epiBdd from "@/assets/images/projet/ecole/gestionEpi/bdd.png";
 
 import joBdd from "@/assets/images/projet/ecole/joticket/bdd.png";
-import joSchema from "@/assets/images/projet/ecole/joticket/Schema.png";
+import joSchema from "@/assets/images/projet/ecole/joticket/schema.png";
 import joGithub from "@/assets/images/projet/ecole/joticket/github.png";
 import joAdmin from "@/assets/images/projet/ecole/joticket/admin.png";
 import joScanner from "@/assets/images/projet/ecole/joticket/scanner.png";
 import joMobile from "@/assets/images/projet/ecole/joticket/mobile.png";
 
 import treiinDiagrammeUtilisation from "@/assets/images/projet/ecole/treiinquille/diagramme_cas_utilisation.png";
-import treiinDiagrammeMetier from "@/assets/images/projet/ecole/treiinquille/diagramme_classes_métier.png";
+import treiinDiagrammeMetier from "@/assets/images/projet/ecole/treiinquille/diagramme_classes.png";
 import treiinFigma from "@/assets/images/projet/ecole/treiinquille/figma.png";
-import treiinCahier from "@/assets/images/projet/ecole/treiinquille/Cahier Technique.pdf";
+import treiinCahier from "@/assets/images/projet/ecole/treiinquille/cahier-technique.pdf";
 import treiinGantt from "@/assets/images/projet/ecole/treiinquille/gantt.png";
 import treiinGithub from "@/assets/images/projet/ecole/treiinquille/github.png";
 import treiinMaquette from "@/assets/images/projet/ecole/treiinquille/maquette.pdf";
 
-import entretienModele from "@/assets/images/projet/ecole/gestionEntretien/Modèle conceptuel.png";
+import entretienModele from "@/assets/images/projet/ecole/gestionEntretien/mod.png";
 import entretienGithub from "@/assets/images/projet/ecole/gestionEntretien/github.png";
 import entretienBdd from "@/assets/images/projet/ecole/gestionEntretien/bdd.png";
 import entretienPostman from "@/assets/images/projet/ecole/gestionEntretien/postman.png";
@@ -92,13 +92,13 @@ import easytrainGithub from "@/assets/images/projet/ecole/easytrain/github.png";
 import easytrainModele from "@/assets/images/projet/ecole/easytrain/modèleRelationnel.png";
 import easytrainBdd from "@/assets/images/projet/ecole/easytrain/bdd.png";
 
-import fantastiqueCharge from "@/assets/images/projet/ecole/les4fantastiques/Cahier des charges Les 4 Fantastiques.pdf";
-import fantastiqueCharte from "@/assets/images/projet/ecole/les4fantastiques/Charte Graphique.pdf";
-import fantastiqueDiagrammeBdd from "@/assets/images/projet/ecole/les4fantastiques/diagramme basse de donnée.png";
+import fantastiqueCharge from "@/assets/images/projet/ecole/les4fantastiques/cahier.pdf";
+import fantastiqueCharte from "@/assets/images/projet/ecole/les4fantastiques/charte.pdf";
+import fantastiqueDiagrammeBdd from "@/assets/images/projet/ecole/les4fantastiques/diagramme.png";
 import fantastiqueDiscord from "@/assets/images/projet/ecole/les4fantastiques/discord.png";
 import fantastiqueGithub from "@/assets/images/projet/ecole/les4fantastiques/github.png";
-import fantastiquePlanning from "@/assets/images/projet/ecole/les4fantastiques/linear planning.png";
-import fantastiqueTicket from "@/assets/images/projet/ecole/les4fantastiques/linear ticket.png";
+import fantastiquePlanning from "@/assets/images/projet/ecole/les4fantastiques/linear-planning.png";
+import fantastiqueTicket from "@/assets/images/projet/ecole/les4fantastiques/linear-ticket.png";
 
 import journalGithub from "@/assets/images/projet/ecole/journal/github.png";
 import adventureGithub from "@/assets/images/projet/ecole/textadventure/github.png";
@@ -106,13 +106,13 @@ import billeterieGithub from "@/assets/images/projet/ecole/billeterie/github.png
 import piloteGithub from "@/assets/images/projet/ecole/gestion_pilote/github.png";
 import heritageGithub from "@/assets/images/projet/ecole/heritage/github.png";
 
-import itstockCSVShopify from "@/assets/images/projet/entreprise/itstock/dossier telecharger.png";
+import itstockCSVShopify from "@/assets/images/projet/entreprise/itstock/dossier-telecharger.png";
 import itstockFigma from "@/assets/images/projet/entreprise/itstock/figma.png";
 import itstockGithub from "@/assets/images/projet/entreprise/itstock/github.png";
-import itstockIcecat from "@/assets/images/projet/entreprise/itstock/icecat csv.png";
-import itstockScript from "@/assets/images/projet/entreprise/itstock/script .png";
-import itstockShopify from "@/assets/images/projet/entreprise/itstock/shopify csv.png";
-import itstockCahier from "@/assets/images/projet/entreprise/itstock/Cahier des charges.pdf";
+import itstockIcecat from "@/assets/images/projet/entreprise/itstock/icecat-csv.png";
+import itstockScript from "@/assets/images/projet/entreprise/itstock/script.png";
+import itstockShopify from "@/assets/images/projet/entreprise/itstock/shopify-csv.png";
+import itstockCahier from "@/assets/images/projet/entreprise/itstock/cahier.pdf";
 import itstock from "@/assets/images/projet/entreprise/itstock/apercu.png";
 import itstockHouse from "@/assets/images/projet/entreprise/itstock/lighthouse.png";
 import itstockSeo from "@/assets/images/projet/entreprise/itstock/seoquake.png";
