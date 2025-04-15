@@ -41,7 +41,7 @@ export function ProjectStat({ stats }: ProjectStatProps) {
   return (
     <div
       ref={componentRef}
-      className={`py-24 ${isVisible ? "animate-fade-left animate-delay-300" : "opacity-0"}`}
+      className={`mb-24 ${isVisible ? "animate-fade-left animate-delay-300" : "opacity-0"}`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">

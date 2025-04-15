@@ -43,7 +43,7 @@ export function ProjectTeam({ teams }: ProjectTeamProps) {
   return (
     <section
       ref={componentRef}
-      className="my-24 flex flex-col items-center justify-center"
+      className="mb-24 flex flex-col items-center justify-center"
     >
       <div
         className={`w-full transition-all duration-700 transform ${

@@ -46,7 +46,7 @@ export const ProjectProuve = ({ title, platforms }: ProjectProuveProps) => {
 
   return (
     <div
-      className={`w-[80%] mx-auto bg-black p-8 rounded-2xl shadow-[0_0_100px_rgba(0,255,255,0.1)] transition-all duration-700 ease-in-out transform ${
+      className={`w-[80%] mb-24 mx-auto bg-black p-8 rounded-2xl shadow-[0_0_100px_rgba(0,255,255,0.1)] transition-all duration-700 ease-in-out transform ${
         mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
       }`}
     >

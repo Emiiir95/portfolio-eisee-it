@@ -10,7 +10,6 @@ export function ProjectSummary({ dataPage }: ProjectSummaryProps) {
   if (!dataPage || dataPage.length === 0) return null;
 
   // Trouver l'objectif et l'achievement dans le tableau
-  const objectiveItem = dataPage.find((item) => item.objective);
   const achievementItem = dataPage.find((item) => item.achievement);
 
   const [isVisible, setIsVisible] = useState(false);
@@ -59,46 +58,15 @@ export function ProjectSummary({ dataPage }: ProjectSummaryProps) {
           align="center"
         >
           <span className="bg-gradient-to-r from-gray-100 to-gray-700 bg-clip-text text-transparent">
-            Objectif et bilan du projet
+            Bilan du projet
           </span>
         </Typography>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Objectif */}
-          <div
-            className={`bg-black/50 rounded-xl p-6 border border-purple-500/20 shadow-[0_0_15px_rgba(147,51,234,0.1)] ${isVisible ? "animate-fade-up animate-delay-500" : "opacity-0"}`}
-          >
-            <Typography
-              variant="h2"
-              color="white"
-              weight="semibold"
-              marginClassName="mb-4"
-              customClassName="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent"
-            >
-              Objectif
-            </Typography>
-            <Typography variant="paragraph" color="lightGray">
-              {objectiveItem?.objective || "Aucun objectif spécifié"}
-            </Typography>
-          </div>
-
-          {/* Bilan */}
-          <div
-            className={`bg-black/50 rounded-xl p-6 border border-teal-500/20 shadow-[0_0_15px_rgba(20,184,166,0.1)] ${isVisible ? "animate-fade-up animate-delay-700" : "opacity-0"}`}
-          >
-            <Typography
-              variant="h2"
-              color="white"
-              weight="semibold"
-              marginClassName="mb-4"
-              customClassName="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent"
-            >
-              Bilan
-            </Typography>
-            <Typography variant="paragraph" color="lightGray">
-              {achievementItem?.achievement || "Aucun bilan spécifié"}
-            </Typography>
-          </div>
+        <div
+          className={`bg-black/50 rounded-xl p-6 border border-teal-500/20 shadow-[0_0_15px_rgba(20,184,166,0.1)] ${isVisible ? "animate-fade-up animate-delay-700" : "opacity-0"}`}
+        >
+          <Typography variant="paragraph" color="lightGray">
+            {achievementItem?.achievement || "Aucun bilan spécifié"}
+          </Typography>
         </div>
       </div>
     </div>

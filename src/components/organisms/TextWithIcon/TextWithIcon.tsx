@@ -44,7 +44,7 @@ export const TextWithIcon = ({
   }, []);
 
   return (
-    <div ref={componentRef} className="mx-auto w-[80%] sm:mb-20 mb-4">
+    <div ref={componentRef} className="mx-auto w-[80%] mb-24">
       <div
         className={`transition-all duration-700 ${isVisible ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-10"}`}
       >
