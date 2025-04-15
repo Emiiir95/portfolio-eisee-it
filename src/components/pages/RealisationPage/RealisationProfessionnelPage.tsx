@@ -6,6 +6,7 @@ import { ProjectHeader } from "@/components/organisms/ProjectHeader";
 import { ProjectTeam } from "@/components/organisms/ProjectTeam";
 import { TextWithIcon } from "@/components/organisms/TextWithIcon";
 import { ProjectStat } from "@/components/organisms/ProjectStat";
+// import { ProjectSummary } from "@/components/organisms/ProjectSummary";
 
 export function RealisationProfessionnelPage() {
   const { url } = useParams();
@@ -25,15 +26,17 @@ export function RealisationProfessionnelPage() {
   return (
     <PublicLayout>
       <ProjectHeader realisation={realisation} />
-      <ProjectTeam teams={realisation.dataPage.teams} />
-      <TextWithIcon tab={realisation.dataPage.donorSpaceInfo} />
       <ProjectProuve
         platforms={realisation.dataPage.platforms}
         title="Aperçu du projet"
       />
+      <ProjectTeam teams={realisation.dataPage.teams} />
+      <TextWithIcon tab={realisation.dataPage.donorSpaceInfo} />
       <ProjectStat stats={realisation.dataPage.stats} />
-
-      <div className="text-white">But/ bjectif du projet et bilan</div>
+      {/* <ProjectSummary
+        objective={realisation.dataPage.objective}
+        achievement={realisation.dataPage.achievement}
+      /> */}
     </PublicLayout>
   );
 }
