@@ -26,7 +26,7 @@ import easytrainIcon from "@/assets/images/projet_logo/easytrain.webp";
 import les4fantastiquesIcon from "@/assets/images/projet_logo/les4fantastiques.webp";
 import journalIcon from "@/assets/images/projet_logo/journal.webp";
 import gestionpiloteIcon from "@/assets/images/projet_logo/gestionpilote.webp";
-import textadventureIcon from "@/assets/images/projet_logo/textadventure.jpg";
+import textadventureIcon from "@/assets/images/projet_logo/textadventure.webp";
 import billeterieIcon from "@/assets/images/projet_logo/billeterie.webp";
 import heritageIcon from "@/assets/images/projet_logo/heritage.webp";
 import itstockIcon from "@/assets/images/projet_logo/itstock.webp";
