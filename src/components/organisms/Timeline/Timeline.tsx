@@ -1,15 +1,15 @@
 import React from "react";
 import { Timeline as TimelineDemo } from "@/components/ui/timeline";
 import { Typography } from "@/components/atoms/Typography/Typography";
-import snowpact from "@/assets/images/timeline/snowpact.png";
-import helio from "@/assets/images/timeline/helio.png";
-import itstock from "@/assets/images/timeline/itstock.png";
-import signaleo from "@/assets/images/timeline/signaleo.png";
+import snowpact from "@/assets/images/timeline/snowpact.webp";
+import helio from "@/assets/images/timeline/helio.webp";
+import itstock from "@/assets/images/timeline/itstock.webp";
+import signaleo from "@/assets/images/timeline/signaleo.webp";
 
-import joticketAdmin from "@/assets/images/projet/ecole/joticket/admin.png";
-import joticketMobile from "@/assets/images/projet/ecole/joticket/mobile.png";
-import gestionEpiDash from "@/assets/images/projet/ecole/gestionEpi/dashboard.png";
-import gestionEpiFront from "@/assets/images/projet/ecole/gestionEpi/front.png";
+import joticketAdmin from "@/assets/images/projet/ecole/joticket/admin.webp";
+import joticketMobile from "@/assets/images/projet/ecole/joticket/mobile.webp";
+import gestionEpiDash from "@/assets/images/projet/ecole/gestionEpi/dashboard.webp";
+import gestionEpiFront from "@/assets/images/projet/ecole/gestionEpi/front.webp";
 
 export function Timeline() {
   const data = [

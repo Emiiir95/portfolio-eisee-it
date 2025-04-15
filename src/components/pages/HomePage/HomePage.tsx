@@ -7,7 +7,7 @@ import { CompetenceComponent } from "@/components/organisms/CompetenceComponent"
 import { NeonBlur } from "@/components/atoms/NeonBlur";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import "./home.css";
-import emir from "@/assets/images/avataaars.png";
+import emir from "@/assets/images/avataaars.webp";
 import { Timeline } from "@/components/organisms/Timeline";
 
 export function HomePage() {

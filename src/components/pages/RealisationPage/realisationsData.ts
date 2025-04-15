@@ -16,33 +16,33 @@ import adnIcon from "@/assets/images/projet_logo/adn.webp";
 import ditibahi from "@/assets/images/projet_logo/ditibahi.webp";
 import helioIcon from "@/assets/images/projet_logo/helio_logo.webp";
 
-import joIcon from "@/assets/images/projet_logo/jo.png";
+import joIcon from "@/assets/images/projet_logo/jo.webp";
 
-import treiinquilleIcon from "@/assets/images/projet_logo/treiinquille.png";
-import gestepiIcon from "@/assets/images/projet_logo/gestepi.png";
-import gestionentretienIcon from "@/assets/images/projet_logo/gestionentretien.png";
-import portfolioIcon from "@/assets/images/avataaars.png";
-import easytrainIcon from "@/assets/images/projet_logo/easytrain.png";
-import les4fantastiquesIcon from "@/assets/images/projet_logo/les4fantastiques.png";
-import journalIcon from "@/assets/images/projet_logo/journal.png";
-import gestionpiloteIcon from "@/assets/images/projet_logo/gestionpilote.png";
+import treiinquilleIcon from "@/assets/images/projet_logo/treiinquille.webp";
+import gestepiIcon from "@/assets/images/projet_logo/gestepi.webp";
+import gestionentretienIcon from "@/assets/images/projet_logo/gestionentretien.webp";
+import portfolioIcon from "@/assets/images/avataaars.webp";
+import easytrainIcon from "@/assets/images/projet_logo/easytrain.webp";
+import les4fantastiquesIcon from "@/assets/images/projet_logo/les4fantastiques.webp";
+import journalIcon from "@/assets/images/projet_logo/journal.webp";
+import gestionpiloteIcon from "@/assets/images/projet_logo/gestionpilote.webp";
 import textadventureIcon from "@/assets/images/projet_logo/textadventure.jpg";
-import billeterieIcon from "@/assets/images/projet_logo/billeterie.png";
-import heritageIcon from "@/assets/images/projet_logo/heritage.png";
-import itstockIcon from "@/assets/images/projet_logo/itstock.png";
+import billeterieIcon from "@/assets/images/projet_logo/billeterie.webp";
+import heritageIcon from "@/assets/images/projet_logo/heritage.webp";
+import itstockIcon from "@/assets/images/projet_logo/itstock.webp";
 
 import ahiCom from "@/assets/images/projet/entreprise/ditibahi/communication.webp";
 import ahiApercu from "@/assets/images/projet/entreprise/ditibahi/apercu.webp";
 import ahiSave from "@/assets/images/projet/entreprise/ditibahi/sauvegarde.webp";
-import ahiSeo from "@/assets/images/projet/entreprise/ditibahi/seoquake.png";
-import ahiHouse from "@/assets/images/projet/entreprise/ditibahi/lighthouse.png";
+import ahiSeo from "@/assets/images/projet/entreprise/ditibahi/seoquake.webp";
+import ahiHouse from "@/assets/images/projet/entreprise/ditibahi/lighthouse.webp";
 
 import helioApercu1 from "@/assets/images/projet/entreprise/helio/apercu1.webp";
 import helioApercu2 from "@/assets/images/projet/entreprise/helio/apercu2.webp";
 import helioSave from "@/assets/images/projet/entreprise/helio/sauvegarde.webp";
 import helioCom from "@/assets/images/projet/entreprise/helio/communication.webp";
-import helioSeo from "@/assets/images/projet/entreprise/helio/seoquake.png";
-import helioHouse from "@/assets/images/projet/entreprise/helio/lighthouse.png";
+import helioSeo from "@/assets/images/projet/entreprise/helio/seoquake.webp";
+import helioHouse from "@/assets/images/projet/entreprise/helio/lighthouse.webp";
 
 import signaleoWebApercu from "@/assets/images/projet/entreprise/signaleoWeb/apercu.webp";
 import signaleoWebGithub from "@/assets/images/projet/entreprise/signaleoWeb/github.webp";
@@ -55,84 +55,84 @@ import signaleoMobileSlack from "@/assets/images/projet/entreprise/signaleoMobil
 import signaleoMobileFigma from "@/assets/images/projet/entreprise/signaleoMobile/figma.webp";
 import signaleoMobileLinear from "@/assets/images/projet/entreprise/signaleoMobile/linear.webp";
 
-import epiModeldonne from "@/assets/images/projet/ecole/gestionEpi/modele_donnee.png";
-import epiDashboard from "@/assets/images/projet/ecole/gestionEpi/dashboard.png";
-import epiFront from "@/assets/images/projet/ecole/gestionEpi/front.png";
-import epiGithub from "@/assets/images/projet/ecole/gestionEpi/github.png";
-import epiPostman from "@/assets/images/projet/ecole/gestionEpi/postman.png";
-import epiClerk from "@/assets/images/projet/ecole/gestionEpi/clerk.png";
-import epiBdd from "@/assets/images/projet/ecole/gestionEpi/bdd.png";
+import epiModeldonne from "@/assets/images/projet/ecole/gestionEpi/modele_donnee.webp";
+import epiDashboard from "@/assets/images/projet/ecole/gestionEpi/dashboard.webp";
+import epiFront from "@/assets/images/projet/ecole/gestionEpi/front.webp";
+import epiGithub from "@/assets/images/projet/ecole/gestionEpi/github.webp";
+import epiPostman from "@/assets/images/projet/ecole/gestionEpi/postman.webp";
+import epiClerk from "@/assets/images/projet/ecole/gestionEpi/clerk.webp";
+import epiBdd from "@/assets/images/projet/ecole/gestionEpi/bdd.webp";
 
-import joBdd from "@/assets/images/projet/ecole/joticket/bdd.png";
-import joSchema from "@/assets/images/projet/ecole/joticket/schema.png";
-import joGithub from "@/assets/images/projet/ecole/joticket/github.png";
-import joAdmin from "@/assets/images/projet/ecole/joticket/admin.png";
-import joScanner from "@/assets/images/projet/ecole/joticket/scanner.png";
-import joMobile from "@/assets/images/projet/ecole/joticket/mobile.png";
+import joBdd from "@/assets/images/projet/ecole/joticket/bdd.webp";
+import joSchema from "@/assets/images/projet/ecole/joticket/schema.webp";
+import joGithub from "@/assets/images/projet/ecole/joticket/github.webp";
+import joAdmin from "@/assets/images/projet/ecole/joticket/admin.webp";
+import joScanner from "@/assets/images/projet/ecole/joticket/scanner.webp";
+import joMobile from "@/assets/images/projet/ecole/joticket/mobile.webp";
 
-import treiinDiagrammeUtilisation from "@/assets/images/projet/ecole/treiinquille/diagramme_cas_utilisation.png";
-import treiinDiagrammeMetier from "@/assets/images/projet/ecole/treiinquille/diagramme_classes.png";
-import treiinFigma from "@/assets/images/projet/ecole/treiinquille/figma.png";
+import treiinDiagrammeUtilisation from "@/assets/images/projet/ecole/treiinquille/diagramme_cas_utilisation.webp";
+import treiinDiagrammeMetier from "@/assets/images/projet/ecole/treiinquille/diagramme_classes.webp";
+import treiinFigma from "@/assets/images/projet/ecole/treiinquille/figma.webp";
 import treiinCahier from "@/assets/images/projet/ecole/treiinquille/cahier-technique.pdf";
-import treiinGantt from "@/assets/images/projet/ecole/treiinquille/gantt.png";
-import treiinGithub from "@/assets/images/projet/ecole/treiinquille/github.png";
+import treiinGantt from "@/assets/images/projet/ecole/treiinquille/gantt.webp";
+import treiinGithub from "@/assets/images/projet/ecole/treiinquille/github.webp";
 import treiinMaquette from "@/assets/images/projet/ecole/treiinquille/maquette.pdf";
 
-import entretienModele from "@/assets/images/projet/ecole/gestionEntretien/mod.png";
-import entretienGithub from "@/assets/images/projet/ecole/gestionEntretien/github.png";
-import entretienBdd from "@/assets/images/projet/ecole/gestionEntretien/bdd.png";
-import entretienPostman from "@/assets/images/projet/ecole/gestionEntretien/postman.png";
+import entretienModele from "@/assets/images/projet/ecole/gestionEntretien/mod.webp";
+import entretienGithub from "@/assets/images/projet/ecole/gestionEntretien/github.webp";
+import entretienBdd from "@/assets/images/projet/ecole/gestionEntretien/bdd.webp";
+import entretienPostman from "@/assets/images/projet/ecole/gestionEntretien/postman.webp";
 
-import portfolioVercel from "@/assets/images/projet/ecole/portfolio/vercel.png";
-import portfolioGithub from "@/assets/images/projet/ecole/portfolio/github.png";
-import portfolioApercu from "@/assets/images/projet/ecole/portfolio/apercu.png";
-import portfolioAlert from "@/assets/images/projet/ecole/portfolio/alert.png";
+import portfolioVercel from "@/assets/images/projet/ecole/portfolio/vercel.webp";
+import portfolioGithub from "@/assets/images/projet/ecole/portfolio/github.webp";
+import portfolioApercu from "@/assets/images/projet/ecole/portfolio/apercu.webp";
+import portfolioAlert from "@/assets/images/projet/ecole/portfolio/alert.webp";
 
-import easytrainGithub from "@/assets/images/projet/ecole/easytrain/github.png";
-import easytrainModele from "@/assets/images/projet/ecole/easytrain/modèleRelationnel.png";
-import easytrainBdd from "@/assets/images/projet/ecole/easytrain/bdd.png";
+import easytrainGithub from "@/assets/images/projet/ecole/easytrain/github.webp";
+import easytrainModele from "@/assets/images/projet/ecole/easytrain/modelerelationnel.webp";
+import easytrainBdd from "@/assets/images/projet/ecole/easytrain/bdd.webp";
 
 import fantastiqueCharge from "@/assets/images/projet/ecole/les4fantastiques/cahier.pdf";
 import fantastiqueCharte from "@/assets/images/projet/ecole/les4fantastiques/charte.pdf";
-import fantastiqueDiagrammeBdd from "@/assets/images/projet/ecole/les4fantastiques/diagramme.png";
-import fantastiqueDiscord from "@/assets/images/projet/ecole/les4fantastiques/discord.png";
-import fantastiqueGithub from "@/assets/images/projet/ecole/les4fantastiques/github.png";
-import fantastiquePlanning from "@/assets/images/projet/ecole/les4fantastiques/linear-planning.png";
-import fantastiqueTicket from "@/assets/images/projet/ecole/les4fantastiques/linear-ticket.png";
+import fantastiqueDiagrammeBdd from "@/assets/images/projet/ecole/les4fantastiques/diagramme.webp";
+import fantastiqueDiscord from "@/assets/images/projet/ecole/les4fantastiques/discord.webp";
+import fantastiqueGithub from "@/assets/images/projet/ecole/les4fantastiques/github.webp";
+import fantastiquePlanning from "@/assets/images/projet/ecole/les4fantastiques/linear-planning.webp";
+import fantastiqueTicket from "@/assets/images/projet/ecole/les4fantastiques/linear-ticket.webp";
 
-import journalGithub from "@/assets/images/projet/ecole/journal/github.png";
-import adventureGithub from "@/assets/images/projet/ecole/textadventure/github.png";
-import billeterieGithub from "@/assets/images/projet/ecole/billeterie/github.png";
-import piloteGithub from "@/assets/images/projet/ecole/gestion_pilote/github.png";
-import heritageGithub from "@/assets/images/projet/ecole/heritage/github.png";
+import journalGithub from "@/assets/images/projet/ecole/journal/github.webp";
+import adventureGithub from "@/assets/images/projet/ecole/textadventure/github.webp";
+import billeterieGithub from "@/assets/images/projet/ecole/billeterie/github.webp";
+import piloteGithub from "@/assets/images/projet/ecole/gestion_pilote/github.webp";
+import heritageGithub from "@/assets/images/projet/ecole/heritage/github.webp";
 
-import itstockCSVShopify from "@/assets/images/projet/entreprise/itstock/dossier-telecharger.png";
-import itstockFigma from "@/assets/images/projet/entreprise/itstock/figma.png";
-import itstockGithub from "@/assets/images/projet/entreprise/itstock/github.png";
-import itstockIcecat from "@/assets/images/projet/entreprise/itstock/icecat-csv.png";
-import itstockScript from "@/assets/images/projet/entreprise/itstock/script.png";
-import itstockShopify from "@/assets/images/projet/entreprise/itstock/shopify-csv.png";
+import itstockCSVShopify from "@/assets/images/projet/entreprise/itstock/dossier-telecharger.webp";
+import itstockFigma from "@/assets/images/projet/entreprise/itstock/figma.webp";
+import itstockGithub from "@/assets/images/projet/entreprise/itstock/github.webp";
+import itstockIcecat from "@/assets/images/projet/entreprise/itstock/icecat-csv.webp";
+import itstockScript from "@/assets/images/projet/entreprise/itstock/script.webp";
+import itstockShopify from "@/assets/images/projet/entreprise/itstock/shopify-csv.webp";
 import itstockCahier from "@/assets/images/projet/entreprise/itstock/cahier.pdf";
-import itstock from "@/assets/images/projet/entreprise/itstock/apercu.png";
-import itstockHouse from "@/assets/images/projet/entreprise/itstock/lighthouse.png";
-import itstockSeo from "@/assets/images/projet/entreprise/itstock/seoquake.png";
+import itstock from "@/assets/images/projet/entreprise/itstock/apercu.webp";
+import itstockHouse from "@/assets/images/projet/entreprise/itstock/lighthouse.webp";
+import itstockSeo from "@/assets/images/projet/entreprise/itstock/seoquake.webp";
 
-import mrh from "@/assets/images/projet/entreprise/mrh_mobile/apercu.png";
-import mrhGithub from "@/assets/images/projet/entreprise/mrh_mobile/github.png";
-import mrhSlack from "@/assets/images/projet/entreprise/mrh_mobile/slack.png";
+import mrh from "@/assets/images/projet/entreprise/mrh_mobile/apercu.webp";
+import mrhGithub from "@/assets/images/projet/entreprise/mrh_mobile/github.webp";
+import mrhSlack from "@/assets/images/projet/entreprise/mrh_mobile/slack.webp";
 
-import adnGitlab from "@/assets/images/projet/entreprise/adn/gitlab.png";
-import adnCode from "@/assets/images/projet/entreprise/adn/vscode.png";
-import adnLinear from "@/assets/images/projet/entreprise/adn/linear.png";
+import adnGitlab from "@/assets/images/projet/entreprise/adn/gitlab.webp";
+import adnCode from "@/assets/images/projet/entreprise/adn/vscode.webp";
+import adnLinear from "@/assets/images/projet/entreprise/adn/linear.webp";
 
-import snowpactseo from "@/assets/images/projet/entreprise/snowpact/quake.png";
-import snowpactHouse from "@/assets/images/projet/entreprise/snowpact/light.png";
-import snowpatGithub from "@/assets/images/projet/entreprise/snowpact/github.png";
-import snowpatApercu from "@/assets/images/projet/entreprise/snowpact/apercu.png";
+import snowpactseo from "@/assets/images/projet/entreprise/snowpact/quake.webp";
+import snowpactHouse from "@/assets/images/projet/entreprise/snowpact/light.webp";
+import snowpatGithub from "@/assets/images/projet/entreprise/snowpact/github.webp";
+import snowpatApercu from "@/assets/images/projet/entreprise/snowpact/apercu.webp";
 
-import mswApercu from "@/assets/images/projet/entreprise/msw/apercu.png";
-import mwsFigma from "@/assets/images/projet/entreprise/msw/figma.png";
-import mwsGithub from "@/assets/images/projet/entreprise/msw/github.png";
+import mswApercu from "@/assets/images/projet/entreprise/msw/apercu.webp";
+import mwsFigma from "@/assets/images/projet/entreprise/msw/figma.webp";
+import mwsGithub from "@/assets/images/projet/entreprise/msw/github.webp";
 
 export const realisationsProfessionnels = [
   {
