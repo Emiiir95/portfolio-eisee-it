@@ -15,7 +15,7 @@ import snowpactIcon from "@/assets/images/projet_logo/snowpact.webp";
 import adnIcon from "@/assets/images/projet_logo/adn.webp";
 import ditibahi from "@/assets/images/projet_logo/ditibahi.webp";
 import helioIcon from "@/assets/images/projet_logo/helio_logo.webp";
-import joTicketIcon from "@/assets/images/projet_logo/joTicket.png";
+import joTicketIcon from "@/assets/images/projet_logo/joticket.png";
 import treiinquilleIcon from "@/assets/images/projet_logo/treiinquille.png";
 import gestepiIcon from "@/assets/images/projet_logo/gestepi.png";
 import gestionentretienIcon from "@/assets/images/projet_logo/gestionentretien.png";
