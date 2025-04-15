@@ -16,7 +16,7 @@ import adnIcon from "@/assets/images/projet_logo/adn.webp";
 import ditibahi from "@/assets/images/projet_logo/ditibahi.webp";
 import helioIcon from "@/assets/images/projet_logo/helio_logo.webp";
 
-import joTicketIcon from "@/assets/images/projet_logo/jo.png";
+import joIcon from "@/assets/images/projet_logo/jo.png";
 
 import treiinquilleIcon from "@/assets/images/projet_logo/treiinquille.png";
 import gestepiIcon from "@/assets/images/projet_logo/gestepi.png";
@@ -494,7 +494,7 @@ export const realisationsScolaires = [
       "Créer une solution intégrée qui facilite la gestion des matchs, la vente de billets et l'accès des supporters aux stades grâce à des QR codes, vise également à fournir une API accessible pour connecter plusieurs applications et permettre une gestion des billets.",
     technoLabel: "python3, django, html, javascript, css",
     tools: "Github, VScode, DB Browser for SQLite",
-    image: joTicketIcon,
+    image: joIcon,
     platforms: [
       { name: "Mobile", image: joMobile },
       { name: "Scanner", image: joScanner },
