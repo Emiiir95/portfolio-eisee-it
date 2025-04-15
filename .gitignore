@@ -53,4 +53,4 @@ sitemap-*.xml
 **/public/worker-*.js.map
 
 # images
-assets
+/src/assets/
