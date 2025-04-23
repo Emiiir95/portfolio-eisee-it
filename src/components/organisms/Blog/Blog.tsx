@@ -12,7 +12,7 @@ interface Post {
   date: string;
   rating: number;
   author: string;
-  source: string;
+  // source: string;
 }
 
 interface BlogProps {
@@ -22,34 +22,82 @@ interface BlogProps {
 export function Blog({ posts }: BlogProps) {
   const [filterDate, setFilterDate] = useState("Tous");
   const [sortRating, setSortRating] = useState("Par default");
-  const [filterSource, setFilterSource] = useState("Tous");
+  // const [filterSource, setFilterSource] = useState("Tous");
+
+  const parseFrenchDate = (dateStr: string) => {
+    const parts = dateStr.split(" ");
+
+    if (parts.length !== 3) {
+      console.error("Format de date incorrect:", dateStr);
+      return new Date(0);
+    }
+
+    const day = parseInt(parts[0], 10);
+
+    const monthMap: { [key: string]: number } = {
+      janvier: 0,
+      février: 1,
+      mars: 2,
+      avril: 3,
+      mai: 4,
+      juin: 5,
+      juillet: 6,
+      août: 7,
+      septembre: 8,
+      octobre: 9,
+      novembre: 10,
+      décembre: 11,
+      // Versions avec première lettre en majuscule
+      Janvier: 0,
+      Février: 1,
+      Mars: 2,
+      Avril: 3,
+      Mai: 4,
+      Juin: 5,
+      Juillet: 6,
+      Août: 7,
+      Septembre: 8,
+      Octobre: 9,
+      Novembre: 10,
+      Décembre: 11,
+    };
+
+    const month = monthMap[parts[1]];
+    const year = parseInt(parts[2], 10);
+
+    if (isNaN(day) || month === undefined || isNaN(year)) {
+      console.error("Impossible de parser la date:", dateStr);
+      return new Date(0);
+    }
+
+    return new Date(year, month, day);
+  };
 
   const filteredAndSortedPosts = posts
-    .filter((post) => {
-      if (
-        filterSource === "Google Alerts" &&
-        (!post.source || !post.source.includes("Google Alerts"))
-      )
-        return false;
-      if (
-        filterSource === "Newsletter" &&
-        (!post.source || !post.source.includes("Newsletter"))
-      )
-        return false;
-      if (
-        filterSource === "Feedly" &&
-        (!post.source || !post.source.includes("Feedly"))
-      )
-        return false;
+    // .filter((post) => {
+    //   if (
+    //     filterSource === "Google Alerts" &&
+    //     (!post.source || !post.source.includes("Google Alerts"))
+    //   )
+    //     return false;
+    //   if (
+    //     filterSource === "Developpez.com" &&
+    //     (!post.source || !post.source.includes("Developpez.com"))
+    //   )
+    //     return false;
 
-      return true;
-    })
+    //   return true;
+    // })
     .sort((a, b) => {
       if (filterDate === "Plus récent") {
-        return new Date(b.date).getTime() - new Date(a.date).getTime();
+        return (
+          parseFrenchDate(b.date).getTime() - parseFrenchDate(a.date).getTime()
+        );
       }
       if (filterDate === "Plus ancien") {
-        return new Date(a.date).getTime() - new Date(b.date).getTime();
+        return (
+          parseFrenchDate(a.date).getTime() - parseFrenchDate(b.date).getTime()
+        );
       }
       if (sortRating === "La plus haute") {
         return b.rating - a.rating;
@@ -64,10 +112,9 @@ export function Blog({ posts }: BlogProps) {
     <div className="mx-auto mt-10 md:mt-40 max-w-7xl px-6 lg:px-8 min-h-screen">
       <div className="mx-auto max-w-2xl text-center">
         <Typography animated variant="componentTitle">
-          Quels sont les <span className="text-[#31e481]">impacts</span> de{" "}
-          <span className="text-[#c031e4]">l&apos;IA</span> et du{" "}
-          <span className="text-[#c031e4]">no-code</span> sur le métier de{" "}
-          <span className="text-[#027BFF]">développeur ?</span>
+          Les <span className="text-[#31e481]">impacts</span> de{" "}
+          <span className="text-[#c031e4]">l&apos;IA</span> sur le métier de{" "}
+          <span className="text-[#027BFF]">développeur</span>
         </Typography>
         <div className="border-t-4 w-[full] mb-12 animate-shake animate-infinite animate-duration-[4000ms]" />
       </div>
@@ -81,11 +128,11 @@ export function Blog({ posts }: BlogProps) {
           label="Trier par date"
           options={["Tous", "Plus récent", "Plus ancien"]}
         />
-        <Select
+        {/* <Select
           onChange={(e) => setFilterSource(e.target.value)}
           label="Filtrer par source"
-          options={["Tous", "Google Alerts", "Newsletter", "Feedly"]}
-        />
+          options={["Tous", "Google Alerts", "Developpez.com"]}
+        /> */}
         <Select
           value={sortRating}
           onChange={(e) => {

@@ -2,82 +2,69 @@ export const posts = [
   {
     id: 1,
     title:
-      "Comment l’IA transforme le métier de développeur web : bonnes pratiques, nouveau rôle et débouchés",
-    date: "21 janvier 2025",
-    author: "Alexandra Patard",
-    href: "https://www.blogdumoderateur.com/comment-ia-transforme-metier-developpeur-web-bonnes-pratiques-nouveau-role-debouches/",
+      "Les générateurs de code par IA créent une génération de « codeurs copier-coller », voici comment y remédier",
+    date: "17 Avril 2025",
+    author: "Terrance Craddock",
+    href: "https://intelligence-artificielle.developpez.com/actu/371105/Les-generateurs-de-code-par-IA-creent-une-generation-de-codeurs-copier-coller-voici-comment-y-remedier-par-Terrance-Craddock/",
     description:
-      "L'article aborde l'impact de l'IA sur le développement web et le rôle évolutif des développeurs. Naël Fawal, directeur de l'EEMI à Lyon, met en avant l'utilisation croissante des outils IA génératifs, comme ChatGPT et Claude, qui aident les développeurs à automatiser certaines tâches et à se concentrer sur des projets plus complexes. Cependant, il insiste sur le fait que l'IA ne remplacera pas les développeurs, car la configuration et l'ajustement des outils d'IA restent cruciaux. Le rôle des développeurs évolue vers une spécialisation avec un focus sur les tests et la gestion de l'IA, et une intégration accrue des pratiques low-code/no-code. Ce dernier permet aux non-développeurs d'accéder à des outils puissants tout en optimisant le travail des professionnels. L'IA et les pratiques no-code/no-code modifient la manière de concevoir des applications et la formation des développeurs doit s'adapter pour répondre à ces nouveaux défis. Le métier de développeur est ainsi en pleine transformation vers une hyperspécialisation avec un accent sur l'IA et la gestion des outils low-code/no-code. Réponse à la question de veille : Oui, l'article répond à la question en détaillant l'impact de l'IA et du no-code sur le métier de développeur. Il aborde l'évolution des tâches, la nécessité de nouvelles compétences, et l'adaptation des développeurs à ces technologies émergentes.",
+      "Les développeurs débutants codent plus vite avec l’IA, mais comprennent moins ce qu’ils font. Les experts, eux, l’utilisent comme un outil. Pour que les juniors progressent, l’article propose des sprints sans IA, les pousser à se poser des questions sur leur code et à corriger les bugs eux-mêmes.",
+    // "Dans cette articles il est dit que les developppeur juniors livrent du code rapide grâce à l'IA, mais peinent à expliquer leur logique. Pour les experts, l'IA est un assistant, alors que les débutants en deviennent dépendants et perdent l’habitude de résoudre des problèmes par eux-mêmes et le plaisir de la résolution. Donc pour inverser cette tendance il est dis qu'il faut imposer des sprints sans IA pour renforcer les bases, poser des questions critiques sur le code écrit et les forcer à réparer des bugs sans aide.",
     imageUrl:
-      "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh",
+      "https://www.centre-europeen-formation.fr/wp-content/uploads/2023/06/intelligence-artificielle-et-developpeur-web.jpg",
     rating: 3,
-    source: "Google Alerts",
+    // source: "Developpez.com",
   },
   {
     id: 2,
-    title: "Oui, vous devez utiliser l'IA pour coder, mais pas comme ça !",
-    date: "23 janvier 2025",
-    author: "Non spécifié",
-    href: "https://www.cio-online.com/actualites/lire-oui-vous-devez-utiliser-l-ia-pour-coder-mais-pas-comme-ca-16101.html",
+    title: "Être développeur à l'ère de l'IA qui raisonne",
+    date: "5 Mars 2025",
+    author: "Mani Doraisamy",
+    href: "https://programmation.developpez.com/actu/369772/Etre-developpeur-a-l-ere-de-l-IA-qui-raisonne-par-Mani-Doraisamy/",
     description:
-      "Cet article aborde l'impact de l'IA dans le métier de développeur en mettant en lumière les défis liés à l'utilisation de l'IA pour le codage. Il souligne que l'IA ne remplace pas les développeurs, mais modifie leur manière de travailler. L'IA peut augmenter la quantité de code générée, mais cela ne se traduit pas forcément par une productivité accrue, car cela entraîne souvent plus de bugs à corriger. L'article insiste sur l'importance de l'expérience du développeur dans l'utilisation des outils d'IA, en recommandant une approche équilibrée pour éviter des erreurs coûteuses. Il critique aussi l'idée que les outils low-code et no-code puissent transformer n'importe qui en développeur sans une connaissance approfondie des logiciels. En conclusion, l'IA peut être un excellent assistant pour les développeurs expérimentés, mais elle ne remplace pas le travail humain.",
+      "Le modèle o3 d’OpenAI est plus fort que 99,8 % des devs. Il peut générer et exécuter du code tout seul. Soit un dev supervise l’IA, soit un non-tech discute avec elle pour tout faire. Mais au final, c’est à nous de comprendre ce que l’IA code. Sinon, on devient juste ses marionnettes.",
+    // "Le modèle o3 d’OpenAI dépasse 99,8 % des développeurs en codage. Les utilisateurs créent de la logique via des exemples et des données visibles. Les développeurs, eux, manipulent des concepts abstraits sans voir les données. ChatGpt génère et exécute du code à la volée comme un vrai développeur sans copier des modèles, elle invente des solutions. Soit le développeur supervise et corrige le code IA ou soit l’utilisateur non-tech dialogue avec une IA qui fait tout. Les humains doivent encore comprendre et assumer ce code car notre capacité à comprendre le code généré par l'IA décidera si nous sommes les marionnettistes ou les marionnettes de l'IA.",
     imageUrl:
-      "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh",
-    rating: 3,
-    source: "Google Alerts",
+      "https://www.kable-communication.com/wp-content/uploads/2019/03/robot-ia-controlant-marionnettes-humaines_33403-82.jpg",
+    rating: 2,
   },
   {
     id: 3,
-    title: "Low Code, No Code : leviers de la transformation numérique",
-    date: "2024",
-    author:
-      "Numeum et le Syndicat Français des Professionnels du No Code (SFPN)",
-    href: "https://www.techtalks.fr/low-code-no-code-leviers-de-la-transformation-numerique/",
+    title:
+      "Je suis heureux que l'IA n'existait pas lorsque j'ai appris à coder",
+    date: "21 Février 2025",
+    author: "Jade Emy",
+    href: "https://programmation.developpez.com/actu/369361/Je-suis-heureux-que-l-IA-n-existait-pas-lorsque-j-ai-appris-a-coder-par-Shiv/",
     description:
-      "Cet article présente les avantages et les points de vigilance du Low Code et No Code dans le cadre de la transformation numérique des entreprises. Ces technologies permettent à un grand nombre de collaborateurs, même sans compétences techniques poussées, de s'impliquer dans le développement de logiciels, contribuant ainsi à une plus grande agilité et accélération des processus d'innovation. Les points essentiels abordés sont : * Accélération du développement : Le Low Code et No Code facilitent la création d'applications et de logiciels, en réduisant le besoin de développeurs spécialisés, ce qui répond notamment à la pénurie de talents dans l'IT. * Transformation organisationnelle : Ces technologies favorisent un changement d'état d'esprit dans les entreprises, en rapprochant les équipes métiers de l'IT, ce qui améliore l'efficacité et la compétitivité, notamment pour les petites entreprises. * Intégration avec l'IA générative : L'IA combinée avec ces technologies renforce la transition numérique et l'innovation dans les entreprises. * Formation et montée en compétences : Les entreprises investissent dans la formation des collaborateurs pour qu'ils deviennent des citizen développeurs, capables de participer activement au développement de solutions. * Points de vigilance : L'éthique et la gestion des impacts de l'IA sont des sujets de préoccupations majeurs, surtout en termes de responsabilité et de sécurité. Cet article est pertinent pour comprendre comment le Low Code et le No Code influencent le métier de développeur, en permettant à des non-développeurs de contribuer à la création de solutions logicielles, tout en offrant une alternative à la pénurie de compétences techniques.",
-    imageUrl:
-      "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh",
-    rating: 3,
-    source: "Google Alerts",
+      "L’auteur pense que l’IA rend les devs plus dépendants que meilleurs. Il a appris à coder sans IA, en passant du temps sur des tutos et forums. Ça l’a forcé à vraiment comprendre. Même si c’était dur, il est content de ne pas avoir eu d’outil magique. Pour bien utiliser l’IA aujourd’hui, il faut déjà savoir coder sans.",
+    // "L'IA ne rend pas les développeurs 10x meilleurs, mais 10x plus dépendants. L'auteur nous parle de productivité immédiate vs compréhension durable. Cette réflexion la inspiré, et il a partagé son expérience. L’apprentissage sans IA l’a poussé à comprendre vraiment ce qu’il faisait. Il a appris à coder en passant du temps sur des tutos YouTube, forums, et doc Python. Il faisait l’effort de tout comprendre ligne par ligne. Il a donc appris à coder en corrigeant ses erreurs lui-même. Il reconnaît que c’était long et frustrant de passer des heures sur des bugs basiques. À l’époque, il rêvait d’un outil qui pourrait corriger. Mais avec du recul, il est content que ces outils n’existaient pas. Il rappelle que pour bien coder avec l’IA, il faut déjà bien savoir coder sans.",
+    imageUrl: "https://tamento.com/wp-content/uploads/antropomorphisme.png",
+    rating: 2,
   },
   {
     id: 4,
     title:
-      "Comment les plateformes DevOps transforment le développement d’applications et la cybersécurité",
-    date: "28 janvier 2025",
-    author: "Julien Macé",
-    href: "https://lesnews.ca/tech/cybersecurite/comment-les-plateformes-devops-transforment-le-developpement-dapplications-et-la-cybersecurite/",
+      "L'utilisation de code généré par l'IA fera de vous un mauvais programmeur",
+    date: "22 Octobre 2024",
+    author: "Rudis Muiznieks",
+    href: "https://programmation.developpez.com/actu/364028/L-utilisation-de-code-genere-par-l-IA-fera-de-vous-un-mauvais-programmeur-par-Rudis-Muiznieks/",
     description:
-      "L'article explore l'évolution des outils DevOps et des pratiques DevSecOps dans un contexte où la cybersécurité devient primordiale. Il évoque comment l'IA et les plateformes low-code/no-code augmentent la productivité des développeurs tout en soulevant des enjeux de sécurité. Les plateformes DevOps unifiées, combinées à l'IA, permettent de rationaliser les flux de travail et d'améliorer la productivité, tandis que les solutions low-code/no-code rendent le développement plus accessible, ce qui pourrait réduire le besoin en développeurs spécialisés dans certains domaines. Le texte aborde aussi l'impact de ces outils sur l'autonomisation des acteurs non techniques, les “citoyens développeurs”. Les points clés : - L'IA améliore la productivité mais ne remplace pas la créativité humaine. - Les plateformes low-code/no-code démocratisent le développement mais posent des risques de sécurité. - La cybersécurité est intégrée via des pratiques comme le DevSecOps pour contrer les menaces croissantes.",
+      "Copier sans comprendre, c’est rater l’apprentissage car les difficultés font progresser. L’IA peut aider à apprendre plus vite, mais seulement si on comprend ce qu’elle génère. Sinon, on finit par oublier ou mal faire.",
+    // "Si on copies/colles des morceaux générés par l’IA sans chercher à les comprendre, on perds l’occasion d’apprendre. Si on ne pratiques pas certaines choses, on les oublieras. C’est dur au début. Mais ces galères forgent la compréhension profonde du métier. Mais attention l’IA est un outil, pas un remplaçant et avec la bonne intention, elle peut nous aider à expérimenter, apprendre plus vite. Si on comprends ce qu'on tu génères, pourquoi perdre du temps à réécrire une fonction que maîtriser mais cela est donc valable que si on maitrise ce que l'IA nous génere",
     imageUrl:
-      "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh",
-    rating: 3,
-    source: "Google Alerts",
+      "https://www.shutterstock.com/image-vector/stress-work-workplace-crisis-hard-260nw-2260047705.jpg",
+    rating: 2,
   },
   {
     id: 5,
-    title: "A Davos, «la collaboration à l’ère de l’IA» est passée à la trappe",
-    date: "27 janvier 2025",
-    author: "Xavier Comtesse et Pascal Eichenberger",
-    href: "https://agefi.com/actualites/opinions/a-davos-la-collaboration-a-lere-de-lia-est-passee-a-la-trappe",
+    title: "Oui, vous devez utiliser l'IA pour coder, mais pas comme ça !",
+    date: "23 Janvier 2025",
+    author: "Matt Asay",
+    href: "https://www.cio-online.com/actualites/lire-oui-vous-devez-utiliser-l-ia-pour-coder-mais-pas-comme-ca-16101.html",
     description:
-      "Cet article aborde l'impact profond de l'intelligence artificielle (IA) et du no-code sur le métier de développeur. Les points clés sont les suivants : - Accessibilité de l'IA et no-code : L'IA permet désormais à des non-informaticiens de créer des agents IA et de coder en utilisant des outils no-code. Cela transforme la dynamique du développement, en redistribuant le pouvoir de création de code vers un plus grand nombre de personnes, y compris des scientifiques, des employés et des patrons. - Transformation des métiers : L'IA va réécrire de nombreux domaines (gestion, marketing, production, médecine, etc.) et révolutionner les méthodes de travail dans ces secteurs, en particulier dans la manière dont les logiciels sont créés et utilisés. - Productivité des développeurs : Les outils IA augmentent de manière significative la productivité des développeurs, certains rapportant des augmentations de 3 à 5 fois leur vitesse de production de code. Cela ouvre de nouvelles possibilités pour les professionnels et amateurs dans le domaine du développement. L'article met en lumière l'impact transformateur de l'IA et du no-code, soulignant qu'ils redéfinissent le rôle des développeurs et rendent la création de code plus accessible à un plus grand nombre.",
+      //   "L’IA aide à écrire plus de code, mais ça veut aussi dire qu’il y a plus de trucs à corriger derrière. Aujourd’hui, si nous sommes developpeur, on ne peux plus faire comme si l’IA existait pas. Elle est partout. Selon l'article l'IA ne remplace pas le developpeur. Car si on ne comprends pas son code, sa risques de laisser passer plein d’erreurs. On dois savoir quand garder le contrôle et quand laisser l’IA nous aidez à aller plus vite. Ceux qui s’en sortent le mieux avec l'IA, c’est ceux qui savent déjà coder.",
+      "L’IA fait gagner du temps mais demande aussi plus de vérifications. Un développeur ne peut plus l’ignorer mais elle ne remplace pas l’humain : il faut comprendre son code pour éviter les erreurs. Les meilleurs avec l’IA sont ceux qui maîtrisent déjà le développement.",
     imageUrl:
-      "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh",
+      "https://www.243tech.com/devenir-expert-numerique/expert-numerique.jpg",
     rating: 3,
-    source: "Google Alerts",
-  },
-  {
-    id: 6,
-    title: "Efficy élargit son offre avec le lancement de Maxo, une suite CRM",
-    date: "28/01/2025",
-    author: "Mourad Krim",
-    href: "https://itsocial.fr/logiciel-agilite/logiciel-agilite-actualites/efficy-elargit-son-offre-avec-le-lancement-de-maxo-une-suite-crm/",
-    description:
-      "L'article présente le lancement de Maxo, une suite CRM développée par Efficy, qui intègre des technologies d'IA et une interface low-code/no-code pour faciliter l'intégration et l'automatisation des processus métier. Il répond à la question de veille en abordant l'impact de l'IA et du no-code sur les métiers, notamment le rôle de l'IA dans l'automatisation des tâches répétitives (saisie de données, planification de rendez-vous), ainsi que l'utilisation de l'interface no-code pour permettre aux utilisateurs de personnaliser et configurer les flux de travail sans compétences en développement. Cela pourrait réduire le besoin pour certains développeurs d'intervenir dans la personnalisation des outils et favoriser une plus grande autonomie des utilisateurs finaux dans l'adaptation des plateformes aux besoins spécifiques de leur entreprise.",
-    imageUrl:
-      "https://static.cnews.fr/sites/default/files/styles/image_750_422/public/image1_66d82dc9abfad.jpg?itok=JBJrw6yh",
-    rating: 3,
-    source: "Google Alerts",
   },
 ];

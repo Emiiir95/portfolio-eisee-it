@@ -57,7 +57,7 @@ export function ProjectTeam({ teams }: ProjectTeamProps) {
           marginClassName="mb-5"
           animated
         >
-          <span className="bg-gradient-to-r from-[#5813C5] to-gray-100 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-b from-[#5813C5] to-gray-100 bg-clip-text text-transparent">
             Mon équipe !
           </span>
         </Typography>

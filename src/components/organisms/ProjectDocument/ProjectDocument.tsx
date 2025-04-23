@@ -74,7 +74,7 @@ export const ProjectDocument = ({
         animated
         align="center"
       >
-        <span className="bg-gradient-to-r from-green-300 to-teal-100 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-t from-green-300 to-teal-100 bg-clip-text text-transparent">
           {title}
         </span>
       </Typography>

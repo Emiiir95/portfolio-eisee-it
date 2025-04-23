@@ -52,7 +52,7 @@ export function ProjectStat({ stats }: ProjectStatProps) {
               variant="h1"
               animated
             >
-              <span className="bg-gradient-to-r from-gray-700 to-gray-100 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-b from-red-500 to-gray-100 bg-clip-text text-transparent">
                 Pour résumer ce projet
               </span>
             </Typography>

@@ -57,12 +57,12 @@ export function ProjectSummary({ dataPage }: ProjectSummaryProps) {
           animated
           align="center"
         >
-          <span className="bg-gradient-to-r from-gray-100 to-gray-700 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-t from-gray-100 to-blue-700 bg-clip-text text-transparent">
             Bilan du projet
           </span>
         </Typography>
         <div
-          className={`bg-black/50 rounded-xl p-6 border border-teal-500/20 shadow-[0_0_15px_rgba(20,184,166,0.1)] ${isVisible ? "animate-fade-up animate-delay-700" : "opacity-0"}`}
+          className={`bg-black/50 rounded-xl p-6 border border-teal-500/20 shadow-[0_0_15px_#2563eb] ${isVisible ? "animate-fade-up animate-delay-700" : "opacity-0"}`}
         >
           <Typography variant="paragraph" color="lightGray">
             {achievementItem?.achievement || "Aucun bilan spécifié"}

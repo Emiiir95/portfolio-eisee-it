@@ -65,7 +65,7 @@ export const ProjectProuve = ({ title, platforms }: ProjectProuveProps) => {
             variant="h1"
             animated
           >
-            <span className="bg-gradient-to-r from-cyan-500 to-teal-100 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-cyan-500 to-white bg-clip-text text-transparent">
               {title}
             </span>
           </Typography>

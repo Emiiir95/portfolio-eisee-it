@@ -1,5 +1,6 @@
 // import { Typography } from "@/components/atoms/Typography/Typography";
 
+import { Typography } from "@/components/atoms/Typography/Typography";
 import { useEffect, useState } from "react";
 interface ProjectHeaderProps {
   realisation: {
@@ -68,9 +69,17 @@ export function ProjectHeader({ realisation }: ProjectHeaderProps) {
                 className={`transform transition-all duration-700 text-center md:text-left ${mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
                 style={{ transitionDelay: "300ms" }}
               >
-                <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 sm:text-left tracking-tight">
-                  {realisation.title}
-                </h1>
+                <Typography
+                  variant="h1"
+                  weight="bold"
+                  marginClassName="mb-5"
+                  animated
+                  customClassName="text-white mb-3 sm:text-left tracking-tight"
+                >
+                  <span className="bg-gradient-to-b from-[#5813C5] to-gray-100 bg-clip-text text-transparent">
+                    {realisation.title}
+                  </span>
+                </Typography>
 
                 {realisation.description && (
                   <p className="text-gray-300 mb-6 max-w-2xl sm:text-left mr-auto md:mx-0">

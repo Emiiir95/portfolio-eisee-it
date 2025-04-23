@@ -5,6 +5,7 @@ import { BilanPage } from "@/components/pages/BilanPage";
 import { ProjetPage } from "@/components/pages/ProjetPage";
 import { EntreprisePage } from "@/components/pages/EntreprisePage";
 import { RealisationPage } from "@/components/pages/RealisationPage/RealisationPage";
+import { MentionPage } from "@/components/pages/MentionPage";
 
 export const Router = () => {
   return (
@@ -15,6 +16,7 @@ export const Router = () => {
       <Route path="Projet" element={<ProjetPage />} />
       <Route path="Entreprise" element={<EntreprisePage />} />
       <Route path="Realisation/:url" element={<RealisationPage />} />
+      <Route path="Mentions" element={<MentionPage />} />
     </Routes>
   );
 };

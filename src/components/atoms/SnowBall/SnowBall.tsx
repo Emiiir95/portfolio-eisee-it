@@ -28,6 +28,7 @@ export function SnowBall({ avatar, name, job }: SnowBallPorps) {
       <div className="flex justify-center items-center">
         <img src={avatar} alt="avatar" className="w-28 h-28 object-cover" />
         {isSnowing && <Snowfall />}
+        {name === "Emir" && <Snowfall />}
       </div>
       <div>
         <Typography

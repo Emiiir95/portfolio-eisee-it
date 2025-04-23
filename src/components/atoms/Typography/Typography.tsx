@@ -85,7 +85,7 @@ export const Typography = ({
           variant === "bigTitle" &&
             "md:text-[58px] md:leading-[58px] font-medium text-[38px] leading-[38px]",
           variant === "heroTitle" &&
-            "font-medium text-[34px] leading-[34px] md:text-[58px] md:leading-[58px]",
+            "font-medium text-[34px] leading-[42px] md:text-[58px] md:leading-[66px]",
           variant === "h1" && "font-900 text-2xl md:text-3xl lg:text-4xl",
           variant === "h2" && "font-900 text-xl md:text-2xl",
           variant === "h3" && "font-900 text-md md:text-xl leading-6",

@@ -55,7 +55,9 @@ export const TextWithIcon = ({
           weight="bold"
           animated
         >
-          {title}
+          <span className="bg-gradient-to-b from-[#0E137C] to-white bg-clip-text text-transparent">
+            {title}
+          </span>
         </Typography>
 
         <div className="space-y-3 flex justify-center items-center flex-col sm:flex-row sm:gap-3 sm:space-y-0 md:mb-8 md:mt-12 xl:gap-8">
@@ -81,7 +83,7 @@ export const TextWithIcon = ({
                 <div className="absolute inset-0 rounded-full bg-purple-800/30 blur-sm"></div>
                 <item.icon
                   size={30}
-                  className="relative text-white bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full p-1 h-8 w-8 min-w-8 min-h-8"
+                  className="relative text-white bg-gradient-to-b from-purple-600 to-indigo-600 rounded-full p-1 h-8 w-8 min-w-8 min-h-8"
                 />
               </div>
               <div className="space-y-2">
