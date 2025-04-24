@@ -64,7 +64,7 @@ export const BilanPage = () => {
       type: "Professionnel",
       year: "2025",
       description: "E-commerce spécialisé matériel informatique",
-      techs: ["Shopify", "JavaScript", "API"],
+      techs: ["Shopify", "JavaScript"],
       icon: <Box className="text-purple-500" />,
     },
     {
@@ -72,7 +72,7 @@ export const BilanPage = () => {
       type: "Professionnel",
       year: "2024",
       description: "Application de signalement d'incidents",
-      techs: ["React", "Next.js", "Tailwind"],
+      techs: ["React Native", "Next.js", "Tailwind"],
       icon: <GanttChart className="text-blue-500" />,
     },
     {
@@ -80,7 +80,7 @@ export const BilanPage = () => {
       type: "Scolaire",
       year: "2024-2025",
       description: "Gestion d'équipements d'escalade",
-      techs: ["React", "Node.js", "Express"],
+      techs: ["React", "Node.js", "Tailwind"],
       icon: <Box className="text-green-500" />,
     },
     {
@@ -88,7 +88,7 @@ export const BilanPage = () => {
       type: "Scolaire",
       year: "2024-2025",
       description: "Système de billetterie événements sportifs",
-      techs: ["Django", "Python", "SQLite"],
+      techs: ["Django", "SQLite"],
       icon: <Briefcase className="text-amber-500" />,
     },
   ];
